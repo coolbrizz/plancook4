@@ -1,0 +1,157 @@
+import { endpoints } from "@/config/api";
+import { useApi } from "@/hooks/useApi";
+import { Ionicons } from "@expo/vector-icons";
+import { router } from "expo-router";
+import { useEffect } from "react";
+import {
+  ScrollView,
+  StyleSheet,
+  Text,
+  TouchableOpacity,
+  View,
+} from "react-native";
+import { Button } from "react-native-paper";
+import { useAuth } from "../../contexts/AuthContext";
+
+export interface Recipe {
+  _id: string;
+  name: string;
+  ingredients: {
+    _id: string;
+    name: string;
+    category: string;
+  }[];
+}
+
+export default function RecipesScreen() {
+  const { logout } = useAuth();
+  const { data: recipes, fetchData } = useApi<Recipe[]>(endpoints.recipes);
+
+  useEffect(() => {
+    fetchData().catch((err) => {
+      console.error("Error fetching recipes:", err);
+    });
+  }, [fetchData]);
+  console.log(recipes);
+  return (
+    <ScrollView style={styles.container}>
+      <View style={styles.header}>
+        <Text style={styles.title}>Mes Recettes</Text>
+        <Button
+          onPress={async () => {
+            await logout();
+            router.replace("/auth/signin");
+          }}
+          mode="text"
+        >
+          <Ionicons name="log-out-outline" size={26} color={"black"} />
+        </Button>
+      </View>
+      <View style={styles.addButtonContainer}>
+        <TouchableOpacity
+          style={styles.addButton}
+          onPress={() =>
+            router.push({
+              pathname: "/recipe/add_recipe",
+            })
+          }
+        >
+          <Ionicons name="add-circle" size={24} color="#A1CEDC" />
+          <Text style={styles.addButtonText}>Ajouter une recette</Text>
+        </TouchableOpacity>
+        <TouchableOpacity
+          style={styles.addButton}
+          onPress={() =>
+            router.push({
+              pathname: "/recipe/addIngredients",
+            })
+          }
+        >
+          <Ionicons name="add-circle" size={24} color="#A1CEDC" />
+          <Text style={styles.addButtonText}>Ajouter un ingrédient</Text>
+        </TouchableOpacity>
+      </View>
+      {recipes?.map((recipe) => (
+        <TouchableOpacity
+          key={recipe._id}
+          style={styles.recipeCard}
+          onPress={() =>
+            router.push({
+              pathname: "/recipe/modify_recipe",
+              params: { id: recipe._id },
+            })
+          }
+        >
+          <Text style={styles.recipeName}>{recipe.name}</Text>
+          <Text style={styles.ingredients}>
+            {recipe.ingredients.map((ing) => ing.name).join(", ")}
+          </Text>
+        </TouchableOpacity>
+      ))}
+    </ScrollView>
+  );
+}
+
+const styles = StyleSheet.create({
+  container: {
+    flex: 1,
+  },
+  header: {
+    flexDirection: "row",
+    justifyContent: "space-between",
+    padding: 20,
+    alignItems: "center",
+    backgroundColor: "#A1CEDC",
+  },
+  title: {
+    fontSize: 24,
+    fontWeight: "bold",
+  },
+  recipeCard: {
+    backgroundColor: "#fff",
+    padding: 16,
+    margin: 8,
+    borderRadius: 8,
+    shadowColor: "#000",
+    shadowOffset: {
+      width: 0,
+      height: 2,
+    },
+    shadowOpacity: 0.1,
+    shadowRadius: 3,
+    elevation: 3,
+  },
+  recipeName: {
+    fontSize: 18,
+    fontWeight: "bold",
+    marginBottom: 8,
+  },
+  ingredients: {
+    color: "#666",
+  },
+  addButton: {
+    flexDirection: "row",
+    alignItems: "center",
+    justifyContent: "center",
+    backgroundColor: "#fff",
+    margin: 16,
+    padding: 16,
+    borderRadius: 12,
+    shadowColor: "#000",
+    shadowOffset: {
+      width: 0,
+      height: 1,
+    },
+  },
+  addButtonText: {
+    marginLeft: 8,
+    color: "#A1CEDC",
+    fontWeight: "bold",
+  },
+  addButtonContainer: {
+    flexDirection: "row",
+    justifyContent: "center",
+    alignItems: "center",
+    gap: 16,
+  },
+});

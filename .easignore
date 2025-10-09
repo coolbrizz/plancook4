@@ -1,0 +1,42 @@
+# Fichiers système Windows
+AppData/
+*.tmp
+*.log
+*.ldb
+.vscode/
+.cursor/
+
+# Fichiers temporaires
+Cache/
+Cache_Data/
+Code Cache/
+IndexedDB/
+Local Extension Settings/
+History/
+
+# Autres dossiers système
+Documents/
+Downloads/
+Pictures/
+Videos/
+Music/
+Desktop/
+OneDrive/
+
+# Fichiers de développement
+node_modules/
+.expo/
+dist/
+web-build/
+
+# Fichiers de configuration locaux
+.env
+.env.local
+.env.production
+
+**/node_modules/
+**/.git/
+**/.vscode/
+
+AppData/Local/BraveSoftware/
+
