@@ -71,9 +71,9 @@ export default function RecipesScreen() {
           <Text style={styles.addButtonText}>Ajouter un ingrédient</Text>
         </TouchableOpacity>
       </View>
-      {recipes?.map((recipe) => (
+      {recipes?.map((recipe, index) => (
         <TouchableOpacity
-          key={recipe._id}
+          key={recipe._id || `recipe-${index}`}
           style={styles.recipeCard}
           onPress={() =>
             router.push({
@@ -134,8 +134,8 @@ const styles = StyleSheet.create({
     alignItems: "center",
     justifyContent: "center",
     backgroundColor: "#fff",
-    margin: 16,
-    padding: 16,
+    margin: 8,
+    padding: 8,
     borderRadius: 12,
     shadowColor: "#000",
     shadowOffset: {
@@ -144,7 +144,7 @@ const styles = StyleSheet.create({
     },
   },
   addButtonText: {
-    marginLeft: 8,
+    marginLeft: 12,
     color: "#A1CEDC",
     fontWeight: "bold",
   },
@@ -152,6 +152,6 @@ const styles = StyleSheet.create({
     flexDirection: "row",
     justifyContent: "center",
     alignItems: "center",
-    gap: 16,
+    gap: 8,
   },
 });

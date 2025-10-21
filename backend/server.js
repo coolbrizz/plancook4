@@ -1,9 +1,6 @@
 require("dotenv").config();
 const express = require("express");
-const mongoose = require("mongoose");
 const cors = require("cors");
-const cron = require("node-cron");
-const dailyMealsController = require("./controllers/daily-meals.controller");
 
 const app = express();
 
@@ -21,24 +18,24 @@ app.use(
 );
 app.use(express.json());
 
-// Routes
-app.use("/api/ingredients", require("./routes/ingredients.routes"));
-app.use("/api/recipes", require("./routes/recipes.routes"));
-app.use("/api/daily-meals", require("./routes/daily-meals.routes"));
+// Routes (using Supabase controllers)
+app.use("/api/ingredients", require("./routes/ingredients.routes.supabase"));
+app.use("/api/recipes", require("./routes/recipes.routes.supabase"));
+app.use("/api/daily-meals", require("./routes/daily-meals.routes.supabase"));
 
-// Schedule cleanup job to run at midnight every day
-cron.schedule("0 0 * * *", async () => {
-  console.log("Running daily cleanup of old meals...");
-  await dailyMealsController.cleanupOldMeals();
+// Health check
+app.get("/", (req, res) => {
+  res.json({ message: "PlanCook API - Running with Supabase" });
 });
 
-// Connect to MongoDB
-mongoose
-  .connect(process.env.MONGO_URI)
-  .then(() => console.log("Connected to MongoDB"))
-  .catch((err) => console.error("MongoDB connection error:", err));
+// Export for Vercel serverless
+module.exports = app;
 
-// Start server
-app.listen(5000, "0.0.0.0", () => {
-  console.log("Server is running on port 5000");
-});
+// Local development server
+if (process.env.NODE_ENV !== "production") {
+  const PORT = process.env.PORT || 5000;
+  app.listen(PORT, "0.0.0.0", () => {
+    console.log(`✅ Server running on port ${PORT}`);
+    console.log(`✅ Using Supabase PostgreSQL`);
+  });
+}

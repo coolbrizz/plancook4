@@ -1,0 +1,1184 @@
+[
+  {
+    "_id": "684985c056cdfe686a5563f3",
+    "name": "Poulet riz",
+    "ingredients": [
+      {
+        "_id": "684985bf6f1d92e44273d658",
+        "name": "Pate de poulet",
+        "category": "Viande",
+        "__v": 0,
+        "createdAt": "2025-06-11T13:33:51.108Z",
+        "updatedAt": "2025-06-11T13:33:51.108Z"
+      },
+      {
+        "_id": "684985bf6f1d92e44273d68d",
+        "name": "Riz",
+        "category": "Féculent",
+        "__v": 0,
+        "createdAt": "2025-06-11T13:33:51.109Z",
+        "updatedAt": "2025-06-11T13:33:51.109Z"
+      }
+    ],
+    "__v": 0,
+    "createdAt": "2025-06-11T13:33:52.246Z",
+    "updatedAt": "2025-06-11T13:33:52.246Z"
+  },
+  {
+    "_id": "684985c056cdfe686a5563f4",
+    "name": "Saumon brocoli",
+    "ingredients": [
+      {
+        "_id": "684985bf6f1d92e44273d66c",
+        "name": "Saumon",
+        "category": "Poisson",
+        "__v": 0,
+        "createdAt": "2025-06-11T13:33:51.109Z",
+        "updatedAt": "2025-06-11T13:33:51.109Z"
+      },
+      {
+        "_id": "684985bf6f1d92e44273d67e",
+        "name": "Brocoli",
+        "category": "Légume",
+        "__v": 0,
+        "createdAt": "2025-06-11T13:33:51.109Z",
+        "updatedAt": "2025-06-11T13:33:51.109Z"
+      }
+    ],
+    "__v": 0,
+    "createdAt": "2025-06-11T13:33:52.247Z",
+    "updatedAt": "2025-06-11T13:33:52.247Z"
+  },
+  {
+    "_id": "684985c056cdfe686a5563f6",
+    "name": "Boeuf carottes",
+    "ingredients": [
+      {
+        "_id": "684985bf6f1d92e44273d677",
+        "name": "Bœuf",
+        "category": "Viande",
+        "__v": 0,
+        "createdAt": "2025-06-11T13:33:51.109Z",
+        "updatedAt": "2025-06-11T13:33:51.109Z"
+      },
+      {
+        "_id": "684985bf6f1d92e44273d67d",
+        "name": "Carotte",
+        "category": "Légume",
+        "__v": 0,
+        "createdAt": "2025-06-11T13:33:51.109Z",
+        "updatedAt": "2025-06-11T13:33:51.109Z"
+      }
+    ],
+    "__v": 0,
+    "createdAt": "2025-06-11T13:33:52.247Z",
+    "updatedAt": "2025-06-11T13:33:52.247Z"
+  },
+  {
+    "_id": "684985c056cdfe686a5563f8",
+    "name": "Tarte poireau",
+    "ingredients": [
+      {
+        "_id": "684985bf6f1d92e44273d679",
+        "name": "Œufs",
+        "category": "Autre",
+        "__v": 0,
+        "createdAt": "2025-06-11T13:33:51.109Z",
+        "updatedAt": "2025-06-11T13:33:51.109Z"
+      },
+      {
+        "_id": "684985bf6f1d92e44273d686",
+        "name": "Poireau",
+        "category": "Légume",
+        "__v": 0,
+        "createdAt": "2025-06-11T13:33:51.109Z",
+        "updatedAt": "2025-06-11T13:33:51.109Z"
+      }
+    ],
+    "__v": 0,
+    "createdAt": "2025-06-11T13:33:52.247Z",
+    "updatedAt": "2025-06-11T13:33:52.247Z"
+  },
+  {
+    "_id": "684985c056cdfe686a5563fc",
+    "name": "Spaghetti bolognaise",
+    "ingredients": [
+      {
+        "_id": "684985bf6f1d92e44273d678",
+        "name": "Viande hachée",
+        "category": "Viande",
+        "__v": 0,
+        "createdAt": "2025-06-11T13:33:51.109Z",
+        "updatedAt": "2025-06-11T13:33:51.109Z"
+      },
+      {
+        "_id": "684985bf6f1d92e44273d68e",
+        "name": "Pâtes",
+        "category": "Féculent",
+        "__v": 0,
+        "createdAt": "2025-06-11T13:33:51.109Z",
+        "updatedAt": "2025-06-11T13:33:51.109Z"
+      },
+      {
+        "_id": "684985bf6f1d92e44273d69b",
+        "name": "Sauce bolognaise",
+        "category": "Sauce",
+        "__v": 0,
+        "createdAt": "2025-06-11T13:33:51.110Z",
+        "updatedAt": "2025-06-11T13:33:51.110Z"
+      }
+    ],
+    "__v": 0,
+    "createdAt": "2025-06-11T13:33:52.248Z",
+    "updatedAt": "2025-06-11T13:33:52.248Z"
+  },
+  {
+    "_id": "684985c056cdfe686a556405",
+    "name": "Croque Monsieur",
+    "ingredients": [
+      {
+        "_id": "684985bf6f1d92e44273d65c",
+        "name": "Jambon",
+        "category": "Viande",
+        "__v": 0,
+        "createdAt": "2025-06-11T13:33:51.108Z",
+        "updatedAt": "2025-06-11T13:33:51.108Z"
+      },
+      {
+        "_id": "684985bf6f1d92e44273d6a1",
+        "name": "Pain de mie",
+        "category": "Pain",
+        "__v": 0,
+        "createdAt": "2025-06-11T13:33:51.110Z",
+        "updatedAt": "2025-06-11T13:33:51.110Z"
+      },
+      {
+        "_id": "684985bf6f1d92e44273d6a4",
+        "name": "Emmental",
+        "category": "Fromages",
+        "__v": 0,
+        "createdAt": "2025-06-11T13:33:51.110Z",
+        "updatedAt": "2025-06-11T13:33:51.110Z"
+      }
+    ],
+    "__v": 0,
+    "createdAt": "2025-06-11T13:33:52.248Z",
+    "updatedAt": "2025-06-11T13:33:52.248Z"
+  },
+  {
+    "_id": "684985c056cdfe686a556408",
+    "name": "Salade fraiche",
+    "ingredients": [
+      {
+        "_id": "684985bf6f1d92e44273d66d",
+        "name": "Thon",
+        "category": "Poisson",
+        "__v": 0,
+        "createdAt": "2025-06-11T13:33:51.109Z",
+        "updatedAt": "2025-06-11T13:33:51.109Z"
+      },
+      {
+        "_id": "684985bf6f1d92e44273d67f",
+        "name": "Tomate",
+        "category": "Légume",
+        "__v": 0,
+        "createdAt": "2025-06-11T13:33:51.109Z",
+        "updatedAt": "2025-06-11T13:33:51.109Z"
+      }
+    ],
+    "__v": 0,
+    "createdAt": "2025-06-11T13:33:52.248Z",
+    "updatedAt": "2025-06-11T13:33:52.248Z"
+  },
+  {
+    "_id": "684985c056cdfe686a556409",
+    "name": "Gratin choux fleurs",
+    "ingredients": [
+      {
+        "_id": "684985bf6f1d92e44273d68f",
+        "name": "Pomme de terre",
+        "category": "Féculent",
+        "__v": 0,
+        "createdAt": "2025-06-11T13:33:51.109Z",
+        "updatedAt": "2025-06-11T13:33:51.109Z"
+      },
+      {
+        "_id": "684985bf6f1d92e44273d68c",
+        "name": "Chou",
+        "category": "Légume",
+        "__v": 0,
+        "createdAt": "2025-06-11T13:33:51.109Z",
+        "updatedAt": "2025-06-11T13:33:51.109Z"
+      },
+      {
+        "_id": "684985bf6f1d92e44273d6a4",
+        "name": "Emmental",
+        "category": "Fromages",
+        "__v": 0,
+        "createdAt": "2025-06-11T13:33:51.110Z",
+        "updatedAt": "2025-06-11T13:33:51.110Z"
+      }
+    ],
+    "__v": 0,
+    "createdAt": "2025-06-11T13:33:52.248Z",
+    "updatedAt": "2025-06-11T13:33:52.248Z"
+  },
+  {
+    "_id": "684985c056cdfe686a556410",
+    "name": "Tarte au thon",
+    "ingredients": [
+      {
+        "_id": "684985bf6f1d92e44273d66d",
+        "name": "Thon",
+        "category": "Poisson",
+        "__v": 0,
+        "createdAt": "2025-06-11T13:33:51.109Z",
+        "updatedAt": "2025-06-11T13:33:51.109Z"
+      },
+      {
+        "_id": "684985bf6f1d92e44273d698",
+        "name": "pate feuilleté",
+        "category": "Pâte",
+        "__v": 0,
+        "createdAt": "2025-06-11T13:33:51.110Z",
+        "updatedAt": "2025-06-11T13:33:51.110Z"
+      },
+      {
+        "_id": "684985bf6f1d92e44273d679",
+        "name": "Œufs",
+        "category": "Autre",
+        "__v": 0,
+        "createdAt": "2025-06-11T13:33:51.109Z",
+        "updatedAt": "2025-06-11T13:33:51.109Z"
+      }
+    ],
+    "__v": 0,
+    "createdAt": "2025-06-11T13:33:52.248Z",
+    "updatedAt": "2025-06-11T13:33:52.248Z"
+  },
+  {
+    "_id": "684985c056cdfe686a556415",
+    "name": "Croissant au jambon",
+    "ingredients": [
+      {
+        "_id": "684985bf6f1d92e44273d65c",
+        "name": "Jambon",
+        "category": "Viande",
+        "__v": 0,
+        "createdAt": "2025-06-11T13:33:51.108Z",
+        "updatedAt": "2025-06-11T13:33:51.108Z"
+      },
+      {
+        "_id": "684985bf6f1d92e44273d69c",
+        "name": "Crème fraiche",
+        "category": "Sauce",
+        "__v": 0,
+        "createdAt": "2025-06-11T13:33:51.110Z",
+        "updatedAt": "2025-06-11T13:33:51.110Z"
+      },
+      {
+        "_id": "684985bf6f1d92e44273d6aa",
+        "name": "croissant",
+        "category": "Autre",
+        "__v": 0,
+        "createdAt": "2025-06-11T13:33:51.110Z",
+        "updatedAt": "2025-06-11T13:33:51.110Z"
+      }
+    ],
+    "__v": 0,
+    "createdAt": "2025-06-11T13:33:52.249Z",
+    "updatedAt": "2025-06-11T13:33:52.249Z"
+  },
+  {
+    "_id": "684985c056cdfe686a5563f7",
+    "name": "Salade césar",
+    "ingredients": [
+      {
+        "_id": "684985bf6f1d92e44273d657",
+        "name": "Blanc de poulet",
+        "category": "Viande",
+        "__v": 0,
+        "createdAt": "2025-06-11T13:33:51.107Z",
+        "updatedAt": "2025-06-11T13:33:51.107Z"
+      }
+    ],
+    "__v": 0,
+    "createdAt": "2025-06-11T13:33:52.247Z",
+    "updatedAt": "2025-06-11T13:33:52.247Z"
+  },
+  {
+    "_id": "684985c056cdfe686a5563f9",
+    "name": "Soupe de légumes",
+    "ingredients": [
+      {
+        "_id": "684985bf6f1d92e44273d68f",
+        "name": "Pomme de terre",
+        "category": "Féculent",
+        "__v": 0,
+        "createdAt": "2025-06-11T13:33:51.109Z",
+        "updatedAt": "2025-06-11T13:33:51.109Z"
+      },
+      {
+        "_id": "684985bf6f1d92e44273d67d",
+        "name": "Carotte",
+        "category": "Légume",
+        "__v": 0,
+        "createdAt": "2025-06-11T13:33:51.109Z",
+        "updatedAt": "2025-06-11T13:33:51.109Z"
+      },
+      {
+        "_id": "684985bf6f1d92e44273d686",
+        "name": "Poireau",
+        "category": "Légume",
+        "__v": 0,
+        "createdAt": "2025-06-11T13:33:51.109Z",
+        "updatedAt": "2025-06-11T13:33:51.109Z"
+      }
+    ],
+    "__v": 0,
+    "createdAt": "2025-06-11T13:33:52.247Z",
+    "updatedAt": "2025-06-11T13:33:52.247Z"
+  },
+  {
+    "_id": "684985c056cdfe686a5563fa",
+    "name": "Dinde curry carotte riz",
+    "ingredients": [
+      {
+        "_id": "684985bf6f1d92e44273d666",
+        "name": "Dinde",
+        "category": "Viande",
+        "__v": 0,
+        "createdAt": "2025-06-11T13:33:51.109Z",
+        "updatedAt": "2025-06-11T13:33:51.109Z"
+      },
+      {
+        "_id": "684985bf6f1d92e44273d67d",
+        "name": "Carotte",
+        "category": "Légume",
+        "__v": 0,
+        "createdAt": "2025-06-11T13:33:51.109Z",
+        "updatedAt": "2025-06-11T13:33:51.109Z"
+      },
+      {
+        "_id": "684985bf6f1d92e44273d68d",
+        "name": "Riz",
+        "category": "Féculent",
+        "__v": 0,
+        "createdAt": "2025-06-11T13:33:51.109Z",
+        "updatedAt": "2025-06-11T13:33:51.109Z"
+      }
+    ],
+    "__v": 0,
+    "createdAt": "2025-06-11T13:33:52.248Z",
+    "updatedAt": "2025-06-11T13:33:52.248Z"
+  },
+  {
+    "_id": "684985c056cdfe686a5563fd",
+    "name": "Spaghetti carbonara",
+    "ingredients": [
+      {
+        "_id": "684985bf6f1d92e44273d664",
+        "name": "Lardons",
+        "category": "Viande",
+        "__v": 0,
+        "createdAt": "2025-06-11T13:33:51.109Z",
+        "updatedAt": "2025-06-11T13:33:51.109Z"
+      },
+      {
+        "_id": "684985bf6f1d92e44273d679",
+        "name": "Œufs",
+        "category": "Autre",
+        "__v": 0,
+        "createdAt": "2025-06-11T13:33:51.109Z",
+        "updatedAt": "2025-06-11T13:33:51.109Z"
+      },
+      {
+        "_id": "684985bf6f1d92e44273d68e",
+        "name": "Pâtes",
+        "category": "Féculent",
+        "__v": 0,
+        "createdAt": "2025-06-11T13:33:51.109Z",
+        "updatedAt": "2025-06-11T13:33:51.109Z"
+      },
+      {
+        "_id": "684985bf6f1d92e44273d69c",
+        "name": "Crème fraiche",
+        "category": "Sauce",
+        "__v": 0,
+        "createdAt": "2025-06-11T13:33:51.110Z",
+        "updatedAt": "2025-06-11T13:33:51.110Z"
+      }
+    ],
+    "__v": 0,
+    "createdAt": "2025-06-11T13:33:52.248Z",
+    "updatedAt": "2025-06-11T13:33:52.248Z"
+  },
+  {
+    "_id": "684985c056cdfe686a556401",
+    "name": "Lentilles saucisse",
+    "ingredients": [
+      {
+        "_id": "684985bf6f1d92e44273d67a",
+        "name": "Saucisse fumé",
+        "category": "Viande",
+        "__v": 0,
+        "createdAt": "2025-06-11T13:33:51.109Z",
+        "updatedAt": "2025-06-11T13:33:51.109Z"
+      },
+      {
+        "_id": "684985bf6f1d92e44273d664",
+        "name": "Lardons",
+        "category": "Viande",
+        "__v": 0,
+        "createdAt": "2025-06-11T13:33:51.109Z",
+        "updatedAt": "2025-06-11T13:33:51.109Z"
+      },
+      {
+        "_id": "684985bf6f1d92e44273d695",
+        "name": "Lentilles",
+        "category": "Féculent",
+        "__v": 0,
+        "createdAt": "2025-06-11T13:33:51.110Z",
+        "updatedAt": "2025-06-11T13:33:51.110Z"
+      },
+      {
+        "_id": "684985bf6f1d92e44273d67d",
+        "name": "Carotte",
+        "category": "Légume",
+        "__v": 0,
+        "createdAt": "2025-06-11T13:33:51.109Z",
+        "updatedAt": "2025-06-11T13:33:51.109Z"
+      },
+      {
+        "_id": "684985bf6f1d92e44273d69a",
+        "name": "oignon",
+        "category": "Légume",
+        "__v": 0,
+        "createdAt": "2025-06-11T13:33:51.110Z",
+        "updatedAt": "2025-06-11T13:33:51.110Z"
+      }
+    ],
+    "__v": 0,
+    "createdAt": "2025-06-11T13:33:52.248Z",
+    "updatedAt": "2025-06-11T13:33:52.248Z"
+  },
+  {
+    "_id": "684985c056cdfe686a556402",
+    "name": "Riz mexicain",
+    "ingredients": [
+      {
+        "_id": "684985bf6f1d92e44273d67c",
+        "name": "Chorizo",
+        "category": "Viande",
+        "__v": 0,
+        "createdAt": "2025-06-11T13:33:51.109Z",
+        "updatedAt": "2025-06-11T13:33:51.109Z"
+      },
+      {
+        "_id": "684985bf6f1d92e44273d68d",
+        "name": "Riz",
+        "category": "Féculent",
+        "__v": 0,
+        "createdAt": "2025-06-11T13:33:51.109Z",
+        "updatedAt": "2025-06-11T13:33:51.109Z"
+      },
+      {
+        "_id": "684985bf6f1d92e44273d685",
+        "name": "Poivron",
+        "category": "Légume",
+        "__v": 0,
+        "createdAt": "2025-06-11T13:33:51.109Z",
+        "updatedAt": "2025-06-11T13:33:51.109Z"
+      }
+    ],
+    "__v": 0,
+    "createdAt": "2025-06-11T13:33:52.248Z",
+    "updatedAt": "2025-06-11T13:33:52.248Z"
+  },
+  {
+    "_id": "684985c056cdfe686a55640a",
+    "name": "Gratin PDT lardons",
+    "ingredients": [
+      {
+        "_id": "684985bf6f1d92e44273d664",
+        "name": "Lardons",
+        "category": "Viande",
+        "__v": 0,
+        "createdAt": "2025-06-11T13:33:51.109Z",
+        "updatedAt": "2025-06-11T13:33:51.109Z"
+      },
+      {
+        "_id": "684985bf6f1d92e44273d68f",
+        "name": "Pomme de terre",
+        "category": "Féculent",
+        "__v": 0,
+        "createdAt": "2025-06-11T13:33:51.109Z",
+        "updatedAt": "2025-06-11T13:33:51.109Z"
+      },
+      {
+        "_id": "684985bf6f1d92e44273d6a4",
+        "name": "Emmental",
+        "category": "Fromages",
+        "__v": 0,
+        "createdAt": "2025-06-11T13:33:51.110Z",
+        "updatedAt": "2025-06-11T13:33:51.110Z"
+      }
+    ],
+    "__v": 0,
+    "createdAt": "2025-06-11T13:33:52.248Z",
+    "updatedAt": "2025-06-11T13:33:52.248Z"
+  },
+  {
+    "_id": "684985c056cdfe686a55640b",
+    "name": "Nuggets Frites",
+    "ingredients": [
+      {
+        "_id": "684985bf6f1d92e44273d663",
+        "name": "Nuggets",
+        "category": "Viande",
+        "__v": 0,
+        "createdAt": "2025-06-11T13:33:51.109Z",
+        "updatedAt": "2025-06-11T13:33:51.109Z"
+      },
+      {
+        "_id": "684985bf6f1d92e44273d69d",
+        "name": "Frites",
+        "category": "Féculent",
+        "__v": 0,
+        "createdAt": "2025-06-11T13:33:51.110Z",
+        "updatedAt": "2025-06-11T13:33:51.110Z"
+      }
+    ],
+    "__v": 0,
+    "createdAt": "2025-06-11T13:33:52.248Z",
+    "updatedAt": "2025-06-11T13:33:52.248Z"
+  },
+  {
+    "_id": "684985c056cdfe686a55640c",
+    "name": "Tomates / mozza",
+    "ingredients": [
+      {
+        "_id": "684985bf6f1d92e44273d67f",
+        "name": "Tomate",
+        "category": "Légume",
+        "__v": 0,
+        "createdAt": "2025-06-11T13:33:51.109Z",
+        "updatedAt": "2025-06-11T13:33:51.109Z"
+      },
+      {
+        "_id": "684985bf6f1d92e44273d6a6",
+        "name": "Mozarella",
+        "category": "Fromages",
+        "__v": 0,
+        "createdAt": "2025-06-11T13:33:51.110Z",
+        "updatedAt": "2025-06-11T13:33:51.110Z"
+      }
+    ],
+    "__v": 0,
+    "createdAt": "2025-06-11T13:33:52.248Z",
+    "updatedAt": "2025-06-11T13:33:52.248Z"
+  },
+  {
+    "_id": "684985c056cdfe686a55640d",
+    "name": "Purée pomme de terre",
+    "ingredients": [
+      {
+        "_id": "684985bf6f1d92e44273d68f",
+        "name": "Pomme de terre",
+        "category": "Féculent",
+        "__v": 0,
+        "createdAt": "2025-06-11T13:33:51.109Z",
+        "updatedAt": "2025-06-11T13:33:51.109Z"
+      }
+    ],
+    "__v": 0,
+    "createdAt": "2025-06-11T13:33:52.248Z",
+    "updatedAt": "2025-06-11T13:33:52.248Z"
+  },
+  {
+    "_id": "684985c056cdfe686a556416",
+    "name": "Hachi parmentier",
+    "ingredients": [
+      {
+        "_id": "684985bf6f1d92e44273d678",
+        "name": "Viande hachée",
+        "category": "Viande",
+        "__v": 0,
+        "createdAt": "2025-06-11T13:33:51.109Z",
+        "updatedAt": "2025-06-11T13:33:51.109Z"
+      },
+      {
+        "_id": "684985bf6f1d92e44273d68f",
+        "name": "Pomme de terre",
+        "category": "Féculent",
+        "__v": 0,
+        "createdAt": "2025-06-11T13:33:51.109Z",
+        "updatedAt": "2025-06-11T13:33:51.109Z"
+      },
+      {
+        "_id": "684985bf6f1d92e44273d6ab",
+        "name": "gruyères",
+        "category": "Fromages",
+        "__v": 0,
+        "createdAt": "2025-06-11T13:33:51.110Z",
+        "updatedAt": "2025-06-11T13:33:51.110Z"
+      }
+    ],
+    "__v": 0,
+    "createdAt": "2025-06-11T13:33:52.249Z",
+    "updatedAt": "2025-06-11T13:33:52.249Z"
+  },
+  {
+    "_id": "684985c056cdfe686a556418",
+    "name": "Poisson/ Pomme de terre",
+    "ingredients": [
+      {
+        "_id": "684985bf6f1d92e44273d674",
+        "name": "Colin",
+        "category": "Poisson",
+        "__v": 0,
+        "createdAt": "2025-06-11T13:33:51.109Z",
+        "updatedAt": "2025-06-11T13:33:51.109Z"
+      },
+      {
+        "_id": "684985bf6f1d92e44273d68f",
+        "name": "Pomme de terre",
+        "category": "Féculent",
+        "__v": 0,
+        "createdAt": "2025-06-11T13:33:51.109Z",
+        "updatedAt": "2025-06-11T13:33:51.109Z"
+      },
+      {
+        "_id": "684985bf6f1d92e44273d69c",
+        "name": "Crème fraiche",
+        "category": "Sauce",
+        "__v": 0,
+        "createdAt": "2025-06-11T13:33:51.110Z",
+        "updatedAt": "2025-06-11T13:33:51.110Z"
+      }
+    ],
+    "__v": 0,
+    "createdAt": "2025-06-11T13:33:52.249Z",
+    "updatedAt": "2025-06-11T13:33:52.249Z"
+  },
+  {
+    "_id": "684985c056cdfe686a5563fb",
+    "name": "Tarte oignons",
+    "ingredients": [
+      {
+        "_id": "684985bf6f1d92e44273d679",
+        "name": "Œufs",
+        "category": "Autre",
+        "__v": 0,
+        "createdAt": "2025-06-11T13:33:51.109Z",
+        "updatedAt": "2025-06-11T13:33:51.109Z"
+      },
+      {
+        "_id": "684985bf6f1d92e44273d69a",
+        "name": "oignon",
+        "category": "Légume",
+        "__v": 0,
+        "createdAt": "2025-06-11T13:33:51.110Z",
+        "updatedAt": "2025-06-11T13:33:51.110Z"
+      },
+      {
+        "_id": "684985bf6f1d92e44273d698",
+        "name": "pate feuilleté",
+        "category": "Pâte",
+        "__v": 0,
+        "createdAt": "2025-06-11T13:33:51.110Z",
+        "updatedAt": "2025-06-11T13:33:51.110Z"
+      }
+    ],
+    "__v": 0,
+    "createdAt": "2025-06-11T13:33:52.248Z",
+    "updatedAt": "2025-06-11T13:33:52.248Z"
+  },
+  {
+    "_id": "684985c056cdfe686a5563fe",
+    "name": "Couscous",
+    "ingredients": [
+      {
+        "_id": "684985bf6f1d92e44273d65f",
+        "name": "Merguez",
+        "category": "Viande",
+        "__v": 0,
+        "createdAt": "2025-06-11T13:33:51.108Z",
+        "updatedAt": "2025-06-11T13:33:51.108Z"
+      },
+      {
+        "_id": "684985bf6f1d92e44273d658",
+        "name": "Pate de poulet",
+        "category": "Viande",
+        "__v": 0,
+        "createdAt": "2025-06-11T13:33:51.108Z",
+        "updatedAt": "2025-06-11T13:33:51.108Z"
+      },
+      {
+        "_id": "684985bf6f1d92e44273d691",
+        "name": "Semoule de blé",
+        "category": "Féculent",
+        "__v": 0,
+        "createdAt": "2025-06-11T13:33:51.110Z",
+        "updatedAt": "2025-06-11T13:33:51.110Z"
+      },
+      {
+        "_id": "684985bf6f1d92e44273d67d",
+        "name": "Carotte",
+        "category": "Légume",
+        "__v": 0,
+        "createdAt": "2025-06-11T13:33:51.109Z",
+        "updatedAt": "2025-06-11T13:33:51.109Z"
+      }
+    ],
+    "__v": 0,
+    "createdAt": "2025-06-11T13:33:52.248Z",
+    "updatedAt": "2025-06-11T13:33:52.248Z"
+  },
+  {
+    "_id": "684985c056cdfe686a5563ff",
+    "name": "Steak frite",
+    "ingredients": [
+      {
+        "_id": "684985bf6f1d92e44273d659",
+        "name": "Steak",
+        "category": "Viande",
+        "__v": 0,
+        "createdAt": "2025-06-11T13:33:51.108Z",
+        "updatedAt": "2025-06-11T13:33:51.108Z"
+      },
+      {
+        "_id": "684985bf6f1d92e44273d69d",
+        "name": "Frites",
+        "category": "Féculent",
+        "__v": 0,
+        "createdAt": "2025-06-11T13:33:51.110Z",
+        "updatedAt": "2025-06-11T13:33:51.110Z"
+      }
+    ],
+    "__v": 0,
+    "createdAt": "2025-06-11T13:33:52.248Z",
+    "updatedAt": "2025-06-11T13:33:52.248Z"
+  },
+  {
+    "_id": "684985c056cdfe686a556400",
+    "name": "Merguez/ Taboulé",
+    "ingredients": [
+      {
+        "_id": "684985bf6f1d92e44273d65f",
+        "name": "Merguez",
+        "category": "Viande",
+        "__v": 0,
+        "createdAt": "2025-06-11T13:33:51.108Z",
+        "updatedAt": "2025-06-11T13:33:51.108Z"
+      },
+      {
+        "_id": "684985bf6f1d92e44273d69e",
+        "name": "Taboulé",
+        "category": "Autre",
+        "__v": 0,
+        "createdAt": "2025-06-11T13:33:51.110Z",
+        "updatedAt": "2025-06-11T13:33:51.110Z"
+      }
+    ],
+    "__v": 0,
+    "createdAt": "2025-06-11T13:33:52.248Z",
+    "updatedAt": "2025-06-11T13:33:52.248Z"
+  },
+  {
+    "_id": "684985c056cdfe686a556403",
+    "name": "Tarte oignons (thon)",
+    "ingredients": [
+      {
+        "_id": "684985bf6f1d92e44273d66d",
+        "name": "Thon",
+        "category": "Poisson",
+        "__v": 0,
+        "createdAt": "2025-06-11T13:33:51.109Z",
+        "updatedAt": "2025-06-11T13:33:51.109Z"
+      },
+      {
+        "_id": "684985bf6f1d92e44273d679",
+        "name": "Œufs",
+        "category": "Autre",
+        "__v": 0,
+        "createdAt": "2025-06-11T13:33:51.109Z",
+        "updatedAt": "2025-06-11T13:33:51.109Z"
+      },
+      {
+        "_id": "684985bf6f1d92e44273d698",
+        "name": "pate feuilleté",
+        "category": "Pâte",
+        "__v": 0,
+        "createdAt": "2025-06-11T13:33:51.110Z",
+        "updatedAt": "2025-06-11T13:33:51.110Z"
+      }
+    ],
+    "__v": 0,
+    "createdAt": "2025-06-11T13:33:52.248Z",
+    "updatedAt": "2025-06-11T13:33:52.248Z"
+  },
+  {
+    "_id": "684985c056cdfe686a556406",
+    "name": "Hot-Dog",
+    "ingredients": [
+      {
+        "_id": "684985bf6f1d92e44273d65e",
+        "name": "Saucisse porc",
+        "category": "Viande",
+        "__v": 0,
+        "createdAt": "2025-06-11T13:33:51.108Z",
+        "updatedAt": "2025-06-11T13:33:51.108Z"
+      },
+      {
+        "_id": "684985bf6f1d92e44273d6a2",
+        "name": "Pain hotdog",
+        "category": "Pain",
+        "__v": 0,
+        "createdAt": "2025-06-11T13:33:51.110Z",
+        "updatedAt": "2025-06-11T13:33:51.110Z"
+      },
+      {
+        "_id": "684985bf6f1d92e44273d6a3",
+        "name": "Cheddar",
+        "category": "Fromages",
+        "__v": 0,
+        "createdAt": "2025-06-11T13:33:51.110Z",
+        "updatedAt": "2025-06-11T13:33:51.110Z"
+      },
+      {
+        "_id": "684985bf6f1d92e44273d69a",
+        "name": "oignon",
+        "category": "Légume",
+        "__v": 0,
+        "createdAt": "2025-06-11T13:33:51.110Z",
+        "updatedAt": "2025-06-11T13:33:51.110Z"
+      }
+    ],
+    "__v": 0,
+    "createdAt": "2025-06-11T13:33:52.248Z",
+    "updatedAt": "2025-06-11T13:33:52.248Z"
+  },
+  {
+    "_id": "684985c056cdfe686a556417",
+    "name": "Lasagne",
+    "ingredients": [
+      {
+        "_id": "684985bf6f1d92e44273d678",
+        "name": "Viande hachée",
+        "category": "Viande",
+        "__v": 0,
+        "createdAt": "2025-06-11T13:33:51.109Z",
+        "updatedAt": "2025-06-11T13:33:51.109Z"
+      },
+      {
+        "_id": "684985bf6f1d92e44273d68e",
+        "name": "Pâtes",
+        "category": "Féculent",
+        "__v": 0,
+        "createdAt": "2025-06-11T13:33:51.109Z",
+        "updatedAt": "2025-06-11T13:33:51.109Z"
+      },
+      {
+        "_id": "684985bf6f1d92e44273d69a",
+        "name": "oignon",
+        "category": "Légume",
+        "__v": 0,
+        "createdAt": "2025-06-11T13:33:51.110Z",
+        "updatedAt": "2025-06-11T13:33:51.110Z"
+      }
+    ],
+    "__v": 0,
+    "createdAt": "2025-06-11T13:33:52.249Z",
+    "updatedAt": "2025-06-11T13:33:52.249Z"
+  },
+  {
+    "_id": "684985c056cdfe686a5563f5",
+    "name": "Pâtes au thon",
+    "ingredients": [
+      {
+        "_id": "684985bf6f1d92e44273d66d",
+        "name": "Thon",
+        "category": "Poisson",
+        "__v": 0,
+        "createdAt": "2025-06-11T13:33:51.109Z",
+        "updatedAt": "2025-06-11T13:33:51.109Z"
+      },
+      {
+        "_id": "684985bf6f1d92e44273d68e",
+        "name": "Pâtes",
+        "category": "Féculent",
+        "__v": 0,
+        "createdAt": "2025-06-11T13:33:51.109Z",
+        "updatedAt": "2025-06-11T13:33:51.109Z"
+      }
+    ],
+    "__v": 0,
+    "createdAt": "2025-06-11T13:33:52.247Z",
+    "updatedAt": "2025-06-11T13:33:52.247Z"
+  },
+  {
+    "_id": "684985c056cdfe686a556404",
+    "name": "Poulet/PDT/Flageolet",
+    "ingredients": [
+      {
+        "_id": "684985bf6f1d92e44273d65a",
+        "name": "Poulet entier",
+        "category": "Viande",
+        "__v": 0,
+        "createdAt": "2025-06-11T13:33:51.108Z",
+        "updatedAt": "2025-06-11T13:33:51.108Z"
+      },
+      {
+        "_id": "684985bf6f1d92e44273d68f",
+        "name": "Pomme de terre",
+        "category": "Féculent",
+        "__v": 0,
+        "createdAt": "2025-06-11T13:33:51.109Z",
+        "updatedAt": "2025-06-11T13:33:51.109Z"
+      },
+      {
+        "_id": "684985bf6f1d92e44273d69f",
+        "name": "Flageolet",
+        "category": "Féculent",
+        "__v": 0,
+        "createdAt": "2025-06-11T13:33:51.110Z",
+        "updatedAt": "2025-06-11T13:33:51.110Z"
+      }
+    ],
+    "__v": 0,
+    "createdAt": "2025-06-11T13:33:52.248Z",
+    "updatedAt": "2025-06-11T13:33:52.248Z"
+  },
+  {
+    "_id": "684985c056cdfe686a556407",
+    "name": "Burger",
+    "ingredients": [
+      {
+        "_id": "684985bf6f1d92e44273d65b",
+        "name": "steak haché",
+        "category": "Viande",
+        "__v": 0,
+        "createdAt": "2025-06-11T13:33:51.108Z",
+        "updatedAt": "2025-06-11T13:33:51.108Z"
+      },
+      {
+        "_id": "684985bf6f1d92e44273d6a5",
+        "name": "Pain burger",
+        "category": "Pain",
+        "__v": 0,
+        "createdAt": "2025-06-11T13:33:51.110Z",
+        "updatedAt": "2025-06-11T13:33:51.110Z"
+      },
+      {
+        "_id": "684985bf6f1d92e44273d69a",
+        "name": "oignon",
+        "category": "Légume",
+        "__v": 0,
+        "createdAt": "2025-06-11T13:33:51.110Z",
+        "updatedAt": "2025-06-11T13:33:51.110Z"
+      },
+      {
+        "_id": "684985bf6f1d92e44273d6a3",
+        "name": "Cheddar",
+        "category": "Fromages",
+        "__v": 0,
+        "createdAt": "2025-06-11T13:33:51.110Z",
+        "updatedAt": "2025-06-11T13:33:51.110Z"
+      }
+    ],
+    "__v": 0,
+    "createdAt": "2025-06-11T13:33:52.248Z",
+    "updatedAt": "2025-06-11T13:33:52.248Z"
+  },
+  {
+    "_id": "684985c056cdfe686a55640e",
+    "name": "Tortilla",
+    "ingredients": [
+      {
+        "_id": "684985bf6f1d92e44273d65b",
+        "name": "steak haché",
+        "category": "Viande",
+        "__v": 0,
+        "createdAt": "2025-06-11T13:33:51.108Z",
+        "updatedAt": "2025-06-11T13:33:51.108Z"
+      },
+      {
+        "_id": "684985bf6f1d92e44273d69b",
+        "name": "Sauce bolognaise",
+        "category": "Sauce",
+        "__v": 0,
+        "createdAt": "2025-06-11T13:33:51.110Z",
+        "updatedAt": "2025-06-11T13:33:51.110Z"
+      }
+    ],
+    "__v": 0,
+    "createdAt": "2025-06-11T13:33:52.248Z",
+    "updatedAt": "2025-06-11T13:33:52.248Z"
+  },
+  {
+    "_id": "684985c056cdfe686a55640f",
+    "name": "Omelette",
+    "ingredients": [
+      {
+        "_id": "684985bf6f1d92e44273d679",
+        "name": "Œufs",
+        "category": "Autre",
+        "__v": 0,
+        "createdAt": "2025-06-11T13:33:51.109Z",
+        "updatedAt": "2025-06-11T13:33:51.109Z"
+      }
+    ],
+    "__v": 0,
+    "createdAt": "2025-06-11T13:33:52.248Z",
+    "updatedAt": "2025-06-11T13:33:52.248Z"
+  },
+  {
+    "_id": "684985c056cdfe686a556411",
+    "name": "Salade PDT",
+    "ingredients": [
+      {
+        "_id": "684985bf6f1d92e44273d66d",
+        "name": "Thon",
+        "category": "Poisson",
+        "__v": 0,
+        "createdAt": "2025-06-11T13:33:51.109Z",
+        "updatedAt": "2025-06-11T13:33:51.109Z"
+      },
+      {
+        "_id": "684985bf6f1d92e44273d67f",
+        "name": "Tomate",
+        "category": "Légume",
+        "__v": 0,
+        "createdAt": "2025-06-11T13:33:51.109Z",
+        "updatedAt": "2025-06-11T13:33:51.109Z"
+      },
+      {
+        "_id": "684985bf6f1d92e44273d6a4",
+        "name": "Emmental",
+        "category": "Fromages",
+        "__v": 0,
+        "createdAt": "2025-06-11T13:33:51.110Z",
+        "updatedAt": "2025-06-11T13:33:51.110Z"
+      }
+    ],
+    "__v": 0,
+    "createdAt": "2025-06-11T13:33:52.249Z",
+    "updatedAt": "2025-06-11T13:33:52.249Z"
+  },
+  {
+    "_id": "684985c056cdfe686a556412",
+    "name": "Sandwich simple",
+    "ingredients": [
+      {
+        "_id": "684985bf6f1d92e44273d65c",
+        "name": "Jambon",
+        "category": "Viande",
+        "__v": 0,
+        "createdAt": "2025-06-11T13:33:51.108Z",
+        "updatedAt": "2025-06-11T13:33:51.108Z"
+      },
+      {
+        "_id": "684985bf6f1d92e44273d6a4",
+        "name": "Emmental",
+        "category": "Fromages",
+        "__v": 0,
+        "createdAt": "2025-06-11T13:33:51.110Z",
+        "updatedAt": "2025-06-11T13:33:51.110Z"
+      },
+      {
+        "_id": "684985bf6f1d92e44273d67f",
+        "name": "Tomate",
+        "category": "Légume",
+        "__v": 0,
+        "createdAt": "2025-06-11T13:33:51.109Z",
+        "updatedAt": "2025-06-11T13:33:51.109Z"
+      },
+      {
+        "_id": "684985bf6f1d92e44273d6a1",
+        "name": "Pain de mie",
+        "category": "Pain",
+        "__v": 0,
+        "createdAt": "2025-06-11T13:33:51.110Z",
+        "updatedAt": "2025-06-11T13:33:51.110Z"
+      }
+    ],
+    "__v": 0,
+    "createdAt": "2025-06-11T13:33:52.249Z",
+    "updatedAt": "2025-06-11T13:33:52.249Z"
+  },
+  {
+    "_id": "684985c056cdfe686a556413",
+    "name": "Quiche",
+    "ingredients": [
+      {
+        "_id": "684985bf6f1d92e44273d664",
+        "name": "Lardons",
+        "category": "Viande",
+        "__v": 0,
+        "createdAt": "2025-06-11T13:33:51.109Z",
+        "updatedAt": "2025-06-11T13:33:51.109Z"
+      },
+      {
+        "_id": "684985bf6f1d92e44273d679",
+        "name": "Œufs",
+        "category": "Autre",
+        "__v": 0,
+        "createdAt": "2025-06-11T13:33:51.109Z",
+        "updatedAt": "2025-06-11T13:33:51.109Z"
+      },
+      {
+        "_id": "684985bf6f1d92e44273d6a4",
+        "name": "Emmental",
+        "category": "Fromages",
+        "__v": 0,
+        "createdAt": "2025-06-11T13:33:51.110Z",
+        "updatedAt": "2025-06-11T13:33:51.110Z"
+      },
+      {
+        "_id": "684985bf6f1d92e44273d698",
+        "name": "pate feuilleté",
+        "category": "Pâte",
+        "__v": 0,
+        "createdAt": "2025-06-11T13:33:51.110Z",
+        "updatedAt": "2025-06-11T13:33:51.110Z"
+      }
+    ],
+    "__v": 0,
+    "createdAt": "2025-06-11T13:33:52.249Z",
+    "updatedAt": "2025-06-11T13:33:52.249Z"
+  },
+  {
+    "_id": "684985c056cdfe686a556414",
+    "name": "Escalope dinde crème",
+    "ingredients": [
+      {
+        "_id": "684985bf6f1d92e44273d666",
+        "name": "Dinde",
+        "category": "Viande",
+        "__v": 0,
+        "createdAt": "2025-06-11T13:33:51.109Z",
+        "updatedAt": "2025-06-11T13:33:51.109Z"
+      },
+      {
+        "_id": "684985bf6f1d92e44273d69c",
+        "name": "Crème fraiche",
+        "category": "Sauce",
+        "__v": 0,
+        "createdAt": "2025-06-11T13:33:51.110Z",
+        "updatedAt": "2025-06-11T13:33:51.110Z"
+      },
+      {
+        "_id": "684985bf6f1d92e44273d68d",
+        "name": "Riz",
+        "category": "Féculent",
+        "__v": 0,
+        "createdAt": "2025-06-11T13:33:51.109Z",
+        "updatedAt": "2025-06-11T13:33:51.109Z"
+      }
+    ],
+    "__v": 0,
+    "createdAt": "2025-06-11T13:33:52.249Z",
+    "updatedAt": "2025-06-11T13:33:52.249Z"
+  }
+]

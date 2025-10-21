@@ -1,7 +1,7 @@
 import SelectionModal from "@/components/SelectionModal";
 import { endpoints } from "@/config/api";
 import { useApi } from "@/hooks/useApi";
-import { router, useLocalSearchParams } from "expo-router";
+import { router, Stack, useLocalSearchParams } from "expo-router";
 import React, { useEffect, useState } from "react";
 import {
   ScrollView,
@@ -94,52 +94,69 @@ export default function ModifyRecipe() {
   };
 
   return (
-    <ScrollView style={styles.container}>
-      <View style={styles.content}>
-        <Text style={styles.title}>Modifier la Recette</Text>
+    <>
+      <Stack.Screen
+        options={{
+          headerShown: true,
+          title: "Modifier la Recette",
+          headerStyle: {
+            backgroundColor: "#A1CEDC",
+          },
+          headerTintColor: "#fff",
+          headerTitleStyle: {
+            fontWeight: "bold",
+          },
+        }}
+      />
+      <ScrollView style={styles.container}>
+        <View style={styles.content}>
+          <TextInput
+            style={styles.input}
+            placeholder="Nom de la recette"
+            value={recipeName}
+            onChangeText={setRecipeName}
+          />
 
-        <TextInput
-          style={styles.input}
-          placeholder="Nom de la recette"
-          value={recipeName}
-          onChangeText={setRecipeName}
-        />
+          <Text style={styles.subtitle}>Ingrédients :</Text>
+          <Button
+            mode="outlined"
+            onPress={() => setIsIngredientModalVisible(true)}
+            style={styles.addButton}
+          >
+            Ajouter un ingrédient
+          </Button>
 
-        <Text style={styles.subtitle}>Ingrédients :</Text>
-        <Button
-          mode="outlined"
-          onPress={() => setIsIngredientModalVisible(true)}
-          style={styles.addButton}
-        >
-          Ajouter un ingrédient
-        </Button>
+          <View style={styles.ingredientsList}>
+            {selectedIngredients.map((ingredient) => (
+              <View key={ingredient._id} style={styles.ingredientItem}>
+                <Text>{ingredient.name}</Text>
+                <TouchableOpacity
+                  onPress={() => removeIngredient(ingredient._id)}
+                >
+                  <Text style={styles.removeButton}>×</Text>
+                </TouchableOpacity>
+              </View>
+            ))}
+          </View>
 
-        <View style={styles.ingredientsList}>
-          {selectedIngredients.map((ingredient) => (
-            <View key={ingredient._id} style={styles.ingredientItem}>
-              <Text>{ingredient.name}</Text>
-              <TouchableOpacity
-                onPress={() => removeIngredient(ingredient._id)}
-              >
-                <Text style={styles.removeButton}>×</Text>
-              </TouchableOpacity>
-            </View>
-          ))}
+          <Button
+            mode="contained"
+            onPress={handleSave}
+            style={styles.saveButton}
+          >
+            Enregistrer les modifications
+          </Button>
         </View>
 
-        <Button mode="contained" onPress={handleSave} style={styles.saveButton}>
-          Enregistrer les modifications
-        </Button>
-      </View>
-
-      <SelectionModal
-        visible={isIngredientModalVisible}
-        onClose={() => setIsIngredientModalVisible(false)}
-        onSelect={handleSelectIngredient}
-        data={ingredients || []}
-        title="Sélectionner un ingrédient"
-      />
-    </ScrollView>
+        <SelectionModal
+          visible={isIngredientModalVisible}
+          onClose={() => setIsIngredientModalVisible(false)}
+          onSelect={handleSelectIngredient}
+          data={ingredients || []}
+          title="Sélectionner un ingrédient"
+        />
+      </ScrollView>
+    </>
   );
 }
 

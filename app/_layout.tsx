@@ -28,6 +28,7 @@ function RootLayoutNav() {
     <SafeAreaProvider>
       <PaperProvider>
         <Stack
+          initialRouteName="(tabs)"
           screenOptions={{
             headerStyle: {
               backgroundColor: "#A1CEDC",

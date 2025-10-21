@@ -1,12 +1,14 @@
-import React from "react";
+import React, { useEffect, useState } from "react";
 import {
   FlatList,
   Modal,
   StyleSheet,
   Text,
+  TextInput,
   TouchableOpacity,
   View,
 } from "react-native";
+import { Ionicons } from "@expo/vector-icons";
 
 interface SelectionModalProps {
   visible: boolean;
@@ -25,6 +27,27 @@ export default function SelectionModal({
   title,
   renderItem,
 }: SelectionModalProps) {
+  const [searchQuery, setSearchQuery] = useState("");
+  const [filteredData, setFilteredData] = useState(data);
+
+  useEffect(() => {
+    if (searchQuery.trim() === "") {
+      setFilteredData(data);
+    } else {
+      const filtered = data.filter((item) =>
+        item.name.toLowerCase().includes(searchQuery.toLowerCase())
+      );
+      setFilteredData(filtered);
+    }
+  }, [searchQuery, data]);
+
+  // Reset search when modal closes
+  useEffect(() => {
+    if (!visible) {
+      setSearchQuery("");
+    }
+  }, [visible]);
+
   return (
     <Modal
       visible={visible}
@@ -35,8 +58,30 @@ export default function SelectionModal({
       <View style={styles.modalContainer}>
         <View style={styles.modalContent}>
           <Text style={styles.title}>{title}</Text>
+
+          <View style={styles.searchContainer}>
+            <Ionicons
+              name="search"
+              size={20}
+              color="#666"
+              style={styles.searchIcon}
+            />
+            <TextInput
+              style={styles.searchInput}
+              placeholder="Rechercher..."
+              value={searchQuery}
+              onChangeText={setSearchQuery}
+              autoCorrect={false}
+            />
+            {searchQuery.length > 0 && (
+              <TouchableOpacity onPress={() => setSearchQuery("")}>
+                <Ionicons name="close-circle" size={20} color="#666" />
+              </TouchableOpacity>
+            )}
+          </View>
+
           <FlatList
-            data={data}
+            data={filteredData}
             keyExtractor={(item) => item._id}
             renderItem={({ item }) => (
               <TouchableOpacity
@@ -50,6 +95,9 @@ export default function SelectionModal({
                 )}
               </TouchableOpacity>
             )}
+            ListEmptyComponent={
+              <Text style={styles.emptyText}>Aucun résultat trouvé</Text>
+            }
           />
           <TouchableOpacity style={styles.closeButton} onPress={onClose}>
             <Text style={styles.closeButtonText}>Fermer</Text>
@@ -77,8 +125,26 @@ const styles = StyleSheet.create({
   title: {
     fontSize: 20,
     fontWeight: "bold",
-    marginBottom: 20,
+    marginBottom: 15,
     textAlign: "center",
+  },
+  searchContainer: {
+    flexDirection: "row",
+    alignItems: "center",
+    backgroundColor: "#f5f5f5",
+    borderRadius: 10,
+    paddingHorizontal: 12,
+    marginBottom: 15,
+    borderWidth: 1,
+    borderColor: "#ddd",
+  },
+  searchIcon: {
+    marginRight: 8,
+  },
+  searchInput: {
+    flex: 1,
+    paddingVertical: 10,
+    fontSize: 16,
   },
   item: {
     padding: 15,
@@ -87,6 +153,12 @@ const styles = StyleSheet.create({
   },
   itemText: {
     fontSize: 16,
+  },
+  emptyText: {
+    textAlign: "center",
+    color: "#666",
+    fontSize: 16,
+    paddingVertical: 20,
   },
   closeButton: {
     marginTop: 20,

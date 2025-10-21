@@ -187,11 +187,12 @@ const styles = StyleSheet.create({
   title: {
     fontSize: 32,
     fontWeight: "bold",
-    marginBottom: 8,
+    marginBottom: 4,
   },
   subtitle: {
     fontSize: 20,
     fontWeight: "bold",
+    marginTop: 20,
   },
   weekContainer: {
     padding: 16,

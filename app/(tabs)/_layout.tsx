@@ -23,7 +23,7 @@ export default function TabLayout() {
           ios: {
             position: "absolute",
           },
-          default: {},
+          default: { marginTop: 12 },
         }),
         headerRight: () => (
           <Button
@@ -33,7 +33,7 @@ export default function TabLayout() {
             }}
             title=""
             variant="text"
-            icon={<Ionicons name="log-out-outline" size={26} color={"black"} />}
+            icon={<Ionicons name="log-out-outline" size={70} color={"black"} />}
           />
         ),
       }}

@@ -1,6 +1,6 @@
 import { endpoints } from "@/config/api";
 import { useApi } from "@/hooks/useApi";
-import { router } from "expo-router";
+import { router, Stack } from "expo-router";
 import React, { useEffect, useState } from "react";
 import { ScrollView, StyleSheet, Text, TextInput, View } from "react-native";
 import { Button } from "react-native-paper";
@@ -75,59 +75,76 @@ export default function AddRecipe() {
   };
 
   return (
-    <ScrollView style={styles.container}>
-      <View style={styles.content}>
-        <Text style={styles.title}>Nouvelle Recette</Text>
-
-        <TextInput
-          style={styles.input}
-          placeholder="Nom de la recette"
-          value={recipeName}
-          onChangeText={setRecipeName}
-        />
-
-        <Button
-          mode="contained"
-          onPress={() => setModalVisible(true)}
-          style={styles.addButton}
-        >
-          Ajouter des ingrédients
-        </Button>
-
-        {selectedIngredients.length > 0 && (
-          <View style={styles.ingredientsList}>
-            <Text style={styles.subtitle}>Ingrédients sélectionnés :</Text>
-            {selectedIngredients.map((ingredient) => (
-              <View key={ingredient._id} style={styles.ingredientItem}>
-                <Text>{ingredient.name}</Text>
-                <Button
-                  onPress={() =>
-                    setSelectedIngredients((ingredients) =>
-                      ingredients.filter((i) => i._id !== ingredient._id)
-                    )
-                  }
-                  mode="text"
-                >
-                  ×
-                </Button>
-              </View>
-            ))}
-          </View>
-        )}
-
-        <Button mode="contained" onPress={handleSave} style={styles.saveButton}>
-          Enregistrer la recette
-        </Button>
-      </View>
-
-      <SelectionModal
-        visible={modalVisible}
-        onClose={() => setModalVisible(false)}
-        onSelect={handleAddIngredient}
-        data={ingredients || []}
-        title="Sélectionner des ingrédients"
+    <>
+      <Stack.Screen
+        options={{
+          headerShown: true,
+          title: "Nouvelle Recette",
+          headerStyle: {
+            backgroundColor: "#A1CEDC",
+          },
+          headerTintColor: "#fff",
+          headerTitleStyle: {
+            fontWeight: "bold",
+          },
+        }}
       />
-    </ScrollView>
+      <ScrollView style={styles.container}>
+        <View style={styles.content}>
+          <TextInput
+            style={styles.input}
+            placeholder="Nom de la recette"
+            value={recipeName}
+            onChangeText={setRecipeName}
+          />
+
+          <Button
+            mode="contained"
+            onPress={() => setModalVisible(true)}
+            style={styles.addButton}
+          >
+            Ajouter des ingrédients
+          </Button>
+
+          {selectedIngredients.length > 0 && (
+            <View style={styles.ingredientsList}>
+              <Text style={styles.subtitle}>Ingrédients sélectionnés :</Text>
+              {selectedIngredients.map((ingredient) => (
+                <View key={ingredient._id} style={styles.ingredientItem}>
+                  <Text>{ingredient.name}</Text>
+                  <Button
+                    onPress={() =>
+                      setSelectedIngredients((ingredients) =>
+                        ingredients.filter((i) => i._id !== ingredient._id)
+                      )
+                    }
+                    mode="text"
+                  >
+                    ×
+                  </Button>
+                </View>
+              ))}
+            </View>
+          )}
+
+          <Button
+            mode="contained"
+            onPress={handleSave}
+            style={styles.saveButton}
+          >
+            Enregistrer la recette
+          </Button>
+        </View>
+
+        <SelectionModal
+          visible={modalVisible}
+          onClose={() => setModalVisible(false)}
+          onSelect={handleAddIngredient}
+          data={ingredients || []}
+          title="Sélectionner des ingrédients"
+        />
+      </ScrollView>
+    </>
   );
 }
 

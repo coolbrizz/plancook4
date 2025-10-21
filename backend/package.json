@@ -8,12 +8,13 @@
   "main": "server.js",
   "scripts": {
     "test": "echo \"Error: no test specified\" && exit 1",
-    "start": "nodemon server.js",
-    "server": "nodemon server.js",
+    "start": "node server.js",
+    "start:mongodb": "node server.mongodb.js",
+    "dev": "nodemon server.js",
     "seed": "node ./backend/seed/seed.ingredients.js",
     "seed-recipes": "node ./backend/seed/seed.recipes.js",
-    "android": "expo run:android",
-    "ios": "expo run:ios"
+    "migrate:export": "node database/migrate-export.js",
+    "migrate:import": "node database/migrate-import.js"
   },
   "dependencies": {
     "@supabase/supabase-js": "^2.74.0",

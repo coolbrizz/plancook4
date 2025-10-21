@@ -1,7 +1,7 @@
 import { endpoints } from "@/config/api";
 import { useApi } from "@/hooks/useApi";
 import { useAuth } from "@/contexts/AuthContext";
-import { router, useLocalSearchParams } from "expo-router";
+import { router, Stack, useLocalSearchParams } from "expo-router";
 import React, { useEffect, useState } from "react";
 import {
   ScrollView,
@@ -45,6 +45,9 @@ export default function EditMealScreen() {
     Ingredient[]
   >(endpoints.ingredients);
   const { fetchData: saveMeal } = useApi<DailyMeal>(endpoints.meals);
+  const { data: existingMeals, fetchData: fetchMeals } = useApi<DailyMeal[]>(
+    endpoints.meals
+  );
 
   const [modalVisible, setModalVisible] = useState(false);
   const [modalType, setModalType] = useState<"recipes" | "ingredients">(
@@ -72,7 +75,37 @@ export default function EditMealScreen() {
     fetchIngredients().catch((err) => {
       console.error("Error fetching ingredients:", err);
     });
-  }, [fetchData, fetchIngredients]);
+    fetchMeals().catch((err) => {
+      console.error("Error fetching meals:", err);
+    });
+  }, [fetchData, fetchIngredients, fetchMeals]);
+
+  // Load existing meal data
+  useEffect(() => {
+    if (existingMeals && mealId) {
+      const meal = existingMeals.find((m) => m._id === mealId);
+      if (meal) {
+        if (meal.lunch.recipe) {
+          setSelectedLunchRecipe({
+            _id: meal.lunch.recipe._id,
+            name: meal.lunch.recipe.name,
+          });
+        }
+        if (meal.lunch.ingredients) {
+          setSelectedLunchIngredients(meal.lunch.ingredients);
+        }
+        if (meal.dinner.recipe) {
+          setSelectedDinnerRecipe({
+            _id: meal.dinner.recipe._id,
+            name: meal.dinner.recipe.name,
+          });
+        }
+        if (meal.dinner.ingredients) {
+          setSelectedDinnerIngredients(meal.dinner.ingredients);
+        }
+      }
+    }
+  }, [existingMeals, mealId]);
 
   const handleSelect = (item: Recipe | Ingredient) => {
     if (modalType === "recipes") {
@@ -169,9 +202,20 @@ export default function EditMealScreen() {
 
   return (
     <>
+      <Stack.Screen
+        options={{
+          headerShown: true,
+          title: `Sélectionnez vos repas`,
+          headerStyle: {
+            backgroundColor: "#A1CEDC",
+          },
+          headerTintColor: "#fff",
+          headerTitleStyle: {
+            fontWeight: "bold",
+          },
+        }}
+      />
       <ScrollView style={styles.container}>
-        <Text style={styles.title}>Repas du {displayDate}</Text>
-
         {/* Repas du midi */}
         <View style={styles.mealSection} key={selectedLunchRecipe?._id}>
           <Text style={styles.sectionTitle}>Repas du midi</Text>

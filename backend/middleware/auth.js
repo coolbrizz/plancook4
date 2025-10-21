@@ -29,7 +29,7 @@ module.exports = async (req, res, next) => {
       return res.status(401).json({ message: "Invalid token" });
     }
 
-    req.user = { _id: user.id };
+    req.user = { id: user.id, email: user.email };
     next();
   } catch (error) {
     console.error("Auth middleware error:", error);

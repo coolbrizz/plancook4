@@ -1,0 +1,690 @@
+[
+  {
+    "_id": "684985bf6f1d92e44273d65b",
+    "name": "steak haché",
+    "category": "Viande",
+    "__v": 0,
+    "createdAt": "2025-06-11T13:33:51.108Z",
+    "updatedAt": "2025-06-11T13:33:51.108Z"
+  },
+  {
+    "_id": "684985bf6f1d92e44273d65e",
+    "name": "Saucisse porc",
+    "category": "Viande",
+    "__v": 0,
+    "createdAt": "2025-06-11T13:33:51.108Z",
+    "updatedAt": "2025-06-11T13:33:51.108Z"
+  },
+  {
+    "_id": "684985bf6f1d92e44273d660",
+    "name": "Brochette",
+    "category": "Viande",
+    "__v": 0,
+    "createdAt": "2025-06-11T13:33:51.108Z",
+    "updatedAt": "2025-06-11T13:33:51.108Z"
+  },
+  {
+    "_id": "684985bf6f1d92e44273d66e",
+    "name": "Cabillaud",
+    "category": "Poisson",
+    "__v": 0,
+    "createdAt": "2025-06-11T13:33:51.109Z",
+    "updatedAt": "2025-06-11T13:33:51.109Z"
+  },
+  {
+    "_id": "684985bf6f1d92e44273d66f",
+    "name": "sole",
+    "category": "Poisson",
+    "__v": 0,
+    "createdAt": "2025-06-11T13:33:51.109Z",
+    "updatedAt": "2025-06-11T13:33:51.109Z"
+  },
+  {
+    "_id": "684985bf6f1d92e44273d672",
+    "name": "Hareng",
+    "category": "Poisson",
+    "__v": 0,
+    "createdAt": "2025-06-11T13:33:51.109Z",
+    "updatedAt": "2025-06-11T13:33:51.109Z"
+  },
+  {
+    "_id": "684985bf6f1d92e44273d677",
+    "name": "Bœuf",
+    "category": "Viande",
+    "__v": 0,
+    "createdAt": "2025-06-11T13:33:51.109Z",
+    "updatedAt": "2025-06-11T13:33:51.109Z"
+  },
+  {
+    "_id": "684985bf6f1d92e44273d67a",
+    "name": "Saucisse fumé",
+    "category": "Viande",
+    "__v": 0,
+    "createdAt": "2025-06-11T13:33:51.109Z",
+    "updatedAt": "2025-06-11T13:33:51.109Z"
+  },
+  {
+    "_id": "684985bf6f1d92e44273d67e",
+    "name": "Brocoli",
+    "category": "Légume",
+    "__v": 0,
+    "createdAt": "2025-06-11T13:33:51.109Z",
+    "updatedAt": "2025-06-11T13:33:51.109Z"
+  },
+  {
+    "_id": "684985bf6f1d92e44273d683",
+    "name": "Petit pois",
+    "category": "Légume",
+    "__v": 0,
+    "createdAt": "2025-06-11T13:33:51.109Z",
+    "updatedAt": "2025-06-11T13:33:51.109Z"
+  },
+  {
+    "_id": "684985bf6f1d92e44273d685",
+    "name": "Poivron",
+    "category": "Légume",
+    "__v": 0,
+    "createdAt": "2025-06-11T13:33:51.109Z",
+    "updatedAt": "2025-06-11T13:33:51.109Z"
+  },
+  {
+    "_id": "684985bf6f1d92e44273d688",
+    "name": "Navet",
+    "category": "Légume",
+    "__v": 0,
+    "createdAt": "2025-06-11T13:33:51.109Z",
+    "updatedAt": "2025-06-11T13:33:51.109Z"
+  },
+  {
+    "_id": "684985bf6f1d92e44273d68e",
+    "name": "Pâtes",
+    "category": "Féculent",
+    "__v": 0,
+    "createdAt": "2025-06-11T13:33:51.109Z",
+    "updatedAt": "2025-06-11T13:33:51.109Z"
+  },
+  {
+    "_id": "684985bf6f1d92e44273d691",
+    "name": "Semoule de blé",
+    "category": "Féculent",
+    "__v": 0,
+    "createdAt": "2025-06-11T13:33:51.110Z",
+    "updatedAt": "2025-06-11T13:33:51.110Z"
+  },
+  {
+    "_id": "684985bf6f1d92e44273d698",
+    "name": "pate feuilleté",
+    "category": "Pâte",
+    "__v": 0,
+    "createdAt": "2025-06-11T13:33:51.110Z",
+    "updatedAt": "2025-06-11T13:33:51.110Z"
+  },
+  {
+    "_id": "684985bf6f1d92e44273d69b",
+    "name": "Sauce bolognaise",
+    "category": "Sauce",
+    "__v": 0,
+    "createdAt": "2025-06-11T13:33:51.110Z",
+    "updatedAt": "2025-06-11T13:33:51.110Z"
+  },
+  {
+    "_id": "684985bf6f1d92e44273d69c",
+    "name": "Crème fraiche",
+    "category": "Sauce",
+    "__v": 0,
+    "createdAt": "2025-06-11T13:33:51.110Z",
+    "updatedAt": "2025-06-11T13:33:51.110Z"
+  },
+  {
+    "_id": "684985bf6f1d92e44273d69e",
+    "name": "Taboulé",
+    "category": "Autre",
+    "__v": 0,
+    "createdAt": "2025-06-11T13:33:51.110Z",
+    "updatedAt": "2025-06-11T13:33:51.110Z"
+  },
+  {
+    "_id": "684985bf6f1d92e44273d69f",
+    "name": "Flageolet",
+    "category": "Féculent",
+    "__v": 0,
+    "createdAt": "2025-06-11T13:33:51.110Z",
+    "updatedAt": "2025-06-11T13:33:51.110Z"
+  },
+  {
+    "_id": "684985bf6f1d92e44273d6a2",
+    "name": "Pain hotdog",
+    "category": "Pain",
+    "__v": 0,
+    "createdAt": "2025-06-11T13:33:51.110Z",
+    "updatedAt": "2025-06-11T13:33:51.110Z"
+  },
+  {
+    "_id": "684985bf6f1d92e44273d6aa",
+    "name": "croissant",
+    "category": "Autre",
+    "__v": 0,
+    "createdAt": "2025-06-11T13:33:51.110Z",
+    "updatedAt": "2025-06-11T13:33:51.110Z"
+  },
+  {
+    "_id": "684985bf6f1d92e44273d6ab",
+    "name": "gruyères",
+    "category": "Fromages",
+    "__v": 0,
+    "createdAt": "2025-06-11T13:33:51.110Z",
+    "updatedAt": "2025-06-11T13:33:51.110Z"
+  },
+  {
+    "_id": "684985bf6f1d92e44273d657",
+    "name": "Blanc de poulet",
+    "category": "Viande",
+    "__v": 0,
+    "createdAt": "2025-06-11T13:33:51.107Z",
+    "updatedAt": "2025-06-11T13:33:51.107Z"
+  },
+  {
+    "_id": "684985bf6f1d92e44273d661",
+    "name": "Agneau",
+    "category": "Viande",
+    "__v": 0,
+    "createdAt": "2025-06-11T13:33:51.109Z",
+    "updatedAt": "2025-06-11T13:33:51.109Z"
+  },
+  {
+    "_id": "684985bf6f1d92e44273d662",
+    "name": "Cotes de porc",
+    "category": "Viande",
+    "__v": 0,
+    "createdAt": "2025-06-11T13:33:51.109Z",
+    "updatedAt": "2025-06-11T13:33:51.109Z"
+  },
+  {
+    "_id": "684985bf6f1d92e44273d663",
+    "name": "Nuggets",
+    "category": "Viande",
+    "__v": 0,
+    "createdAt": "2025-06-11T13:33:51.109Z",
+    "updatedAt": "2025-06-11T13:33:51.109Z"
+  },
+  {
+    "_id": "684985bf6f1d92e44273d668",
+    "name": "lapin",
+    "category": "Viande",
+    "__v": 0,
+    "createdAt": "2025-06-11T13:33:51.109Z",
+    "updatedAt": "2025-06-11T13:33:51.109Z"
+  },
+  {
+    "_id": "684985bf6f1d92e44273d66c",
+    "name": "Saumon",
+    "category": "Poisson",
+    "__v": 0,
+    "createdAt": "2025-06-11T13:33:51.109Z",
+    "updatedAt": "2025-06-11T13:33:51.109Z"
+  },
+  {
+    "_id": "684985bf6f1d92e44273d673",
+    "name": "Dorade",
+    "category": "Poisson",
+    "__v": 0,
+    "createdAt": "2025-06-11T13:33:51.109Z",
+    "updatedAt": "2025-06-11T13:33:51.109Z"
+  },
+  {
+    "_id": "684985bf6f1d92e44273d676",
+    "name": "Limande",
+    "category": "Poisson",
+    "__v": 0,
+    "createdAt": "2025-06-11T13:33:51.109Z",
+    "updatedAt": "2025-06-11T13:33:51.109Z"
+  },
+  {
+    "_id": "684985bf6f1d92e44273d67d",
+    "name": "Carotte",
+    "category": "Légume",
+    "__v": 0,
+    "createdAt": "2025-06-11T13:33:51.109Z",
+    "updatedAt": "2025-06-11T13:33:51.109Z"
+  },
+  {
+    "_id": "684985bf6f1d92e44273d686",
+    "name": "Poireau",
+    "category": "Légume",
+    "__v": 0,
+    "createdAt": "2025-06-11T13:33:51.109Z",
+    "updatedAt": "2025-06-11T13:33:51.109Z"
+  },
+  {
+    "_id": "684985bf6f1d92e44273d689",
+    "name": "Salade",
+    "category": "Légume",
+    "__v": 0,
+    "createdAt": "2025-06-11T13:33:51.109Z",
+    "updatedAt": "2025-06-11T13:33:51.109Z"
+  },
+  {
+    "_id": "684985bf6f1d92e44273d68c",
+    "name": "Chou",
+    "category": "Légume",
+    "__v": 0,
+    "createdAt": "2025-06-11T13:33:51.109Z",
+    "updatedAt": "2025-06-11T13:33:51.109Z"
+  },
+  {
+    "_id": "684985bf6f1d92e44273d693",
+    "name": "Quinoa",
+    "category": "Féculent",
+    "__v": 0,
+    "createdAt": "2025-06-11T13:33:51.110Z",
+    "updatedAt": "2025-06-11T13:33:51.110Z"
+  },
+  {
+    "_id": "684985bf6f1d92e44273d694",
+    "name": "Ebly",
+    "category": "Féculent",
+    "__v": 0,
+    "createdAt": "2025-06-11T13:33:51.110Z",
+    "updatedAt": "2025-06-11T13:33:51.110Z"
+  },
+  {
+    "_id": "684985bf6f1d92e44273d696",
+    "name": "Pois chiches",
+    "category": "Féculent",
+    "__v": 0,
+    "createdAt": "2025-06-11T13:33:51.110Z",
+    "updatedAt": "2025-06-11T13:33:51.110Z"
+  },
+  {
+    "_id": "684985bf6f1d92e44273d697",
+    "name": "Flocon avoine",
+    "category": "Féculent",
+    "__v": 0,
+    "createdAt": "2025-06-11T13:33:51.110Z",
+    "updatedAt": "2025-06-11T13:33:51.110Z"
+  },
+  {
+    "_id": "684985bf6f1d92e44273d69a",
+    "name": "oignon",
+    "category": "Légume",
+    "__v": 0,
+    "createdAt": "2025-06-11T13:33:51.110Z",
+    "updatedAt": "2025-06-11T13:33:51.110Z"
+  },
+  {
+    "_id": "684985bf6f1d92e44273d6a4",
+    "name": "Emmental",
+    "category": "Fromages",
+    "__v": 0,
+    "createdAt": "2025-06-11T13:33:51.110Z",
+    "updatedAt": "2025-06-11T13:33:51.110Z"
+  },
+  {
+    "_id": "684985bf6f1d92e44273d6a5",
+    "name": "Pain burger",
+    "category": "Pain",
+    "__v": 0,
+    "createdAt": "2025-06-11T13:33:51.110Z",
+    "updatedAt": "2025-06-11T13:33:51.110Z"
+  },
+  {
+    "_id": "684985bf6f1d92e44273d6a7",
+    "name": "Buratta",
+    "category": "Fromages",
+    "__v": 0,
+    "createdAt": "2025-06-11T13:33:51.110Z",
+    "updatedAt": "2025-06-11T13:33:51.110Z"
+  },
+  {
+    "_id": "684985bf6f1d92e44273d6a8",
+    "name": "Macédoine",
+    "category": "Autre",
+    "__v": 0,
+    "createdAt": "2025-06-11T13:33:51.110Z",
+    "updatedAt": "2025-06-11T13:33:51.110Z"
+  },
+  {
+    "_id": "684985bf6f1d92e44273d65f",
+    "name": "Merguez",
+    "category": "Viande",
+    "__v": 0,
+    "createdAt": "2025-06-11T13:33:51.108Z",
+    "updatedAt": "2025-06-11T13:33:51.108Z"
+  },
+  {
+    "_id": "684985bf6f1d92e44273d664",
+    "name": "Lardons",
+    "category": "Viande",
+    "__v": 0,
+    "createdAt": "2025-06-11T13:33:51.109Z",
+    "updatedAt": "2025-06-11T13:33:51.109Z"
+  },
+  {
+    "_id": "684985bf6f1d92e44273d665",
+    "name": "Gigot",
+    "category": "Viande",
+    "__v": 0,
+    "createdAt": "2025-06-11T13:33:51.109Z",
+    "updatedAt": "2025-06-11T13:33:51.109Z"
+  },
+  {
+    "_id": "684985bf6f1d92e44273d667",
+    "name": "canard",
+    "category": "Viande",
+    "__v": 0,
+    "createdAt": "2025-06-11T13:33:51.109Z",
+    "updatedAt": "2025-06-11T13:33:51.109Z"
+  },
+  {
+    "_id": "684985bf6f1d92e44273d670",
+    "name": "Maquereau",
+    "category": "Poisson",
+    "__v": 0,
+    "createdAt": "2025-06-11T13:33:51.109Z",
+    "updatedAt": "2025-06-11T13:33:51.109Z"
+  },
+  {
+    "_id": "684985bf6f1d92e44273d671",
+    "name": "Sardine",
+    "category": "Poisson",
+    "__v": 0,
+    "createdAt": "2025-06-11T13:33:51.109Z",
+    "updatedAt": "2025-06-11T13:33:51.109Z"
+  },
+  {
+    "_id": "684985bf6f1d92e44273d67b",
+    "name": "Cordon bleu",
+    "category": "Viande",
+    "__v": 0,
+    "createdAt": "2025-06-11T13:33:51.109Z",
+    "updatedAt": "2025-06-11T13:33:51.109Z"
+  },
+  {
+    "_id": "684985bf6f1d92e44273d67c",
+    "name": "Chorizo",
+    "category": "Viande",
+    "__v": 0,
+    "createdAt": "2025-06-11T13:33:51.109Z",
+    "updatedAt": "2025-06-11T13:33:51.109Z"
+  },
+  {
+    "_id": "684985bf6f1d92e44273d682",
+    "name": "Courgette",
+    "category": "Légume",
+    "__v": 0,
+    "createdAt": "2025-06-11T13:33:51.109Z",
+    "updatedAt": "2025-06-11T13:33:51.109Z"
+  },
+  {
+    "_id": "684985bf6f1d92e44273d687",
+    "name": "Aubergine",
+    "category": "Légume",
+    "__v": 0,
+    "createdAt": "2025-06-11T13:33:51.109Z",
+    "updatedAt": "2025-06-11T13:33:51.109Z"
+  },
+  {
+    "_id": "684985bf6f1d92e44273d68a",
+    "name": "Radis",
+    "category": "Légume",
+    "__v": 0,
+    "createdAt": "2025-06-11T13:33:51.109Z",
+    "updatedAt": "2025-06-11T13:33:51.109Z"
+  },
+  {
+    "_id": "684985bf6f1d92e44273d68b",
+    "name": "Épinard",
+    "category": "Légume",
+    "__v": 0,
+    "createdAt": "2025-06-11T13:33:51.109Z",
+    "updatedAt": "2025-06-11T13:33:51.109Z"
+  },
+  {
+    "_id": "684985bf6f1d92e44273d68d",
+    "name": "Riz",
+    "category": "Féculent",
+    "__v": 0,
+    "createdAt": "2025-06-11T13:33:51.109Z",
+    "updatedAt": "2025-06-11T13:33:51.109Z"
+  },
+  {
+    "_id": "684985bf6f1d92e44273d690",
+    "name": "patate douce",
+    "category": "Féculent",
+    "__v": 0,
+    "createdAt": "2025-06-11T13:33:51.109Z",
+    "updatedAt": "2025-06-11T13:33:51.109Z"
+  },
+  {
+    "_id": "684985bf6f1d92e44273d692",
+    "name": "Boulgour",
+    "category": "Féculent",
+    "__v": 0,
+    "createdAt": "2025-06-11T13:33:51.110Z",
+    "updatedAt": "2025-06-11T13:33:51.110Z"
+  },
+  {
+    "_id": "684985bf6f1d92e44273d6a0",
+    "name": "Maïs",
+    "category": "Légume",
+    "__v": 0,
+    "createdAt": "2025-06-11T13:33:51.110Z",
+    "updatedAt": "2025-06-11T13:33:51.110Z"
+  },
+  {
+    "_id": "684985bf6f1d92e44273d6a3",
+    "name": "Cheddar",
+    "category": "Fromages",
+    "__v": 0,
+    "createdAt": "2025-06-11T13:33:51.110Z",
+    "updatedAt": "2025-06-11T13:33:51.110Z"
+  },
+  {
+    "_id": "684985bf6f1d92e44273d6a6",
+    "name": "Mozarella",
+    "category": "Fromages",
+    "__v": 0,
+    "createdAt": "2025-06-11T13:33:51.110Z",
+    "updatedAt": "2025-06-11T13:33:51.110Z"
+  },
+  {
+    "_id": "684985bf6f1d92e44273d6ac",
+    "name": "Kiri",
+    "category": "Fromages",
+    "__v": 0,
+    "createdAt": "2025-06-11T13:33:51.110Z",
+    "updatedAt": "2025-06-11T13:33:51.110Z"
+  },
+  {
+    "_id": "684985bf6f1d92e44273d658",
+    "name": "Pate de poulet",
+    "category": "Viande",
+    "__v": 0,
+    "createdAt": "2025-06-11T13:33:51.108Z",
+    "updatedAt": "2025-06-11T13:33:51.108Z"
+  },
+  {
+    "_id": "684985bf6f1d92e44273d659",
+    "name": "Steak",
+    "category": "Viande",
+    "__v": 0,
+    "createdAt": "2025-06-11T13:33:51.108Z",
+    "updatedAt": "2025-06-11T13:33:51.108Z"
+  },
+  {
+    "_id": "684985bf6f1d92e44273d65a",
+    "name": "Poulet entier",
+    "category": "Viande",
+    "__v": 0,
+    "createdAt": "2025-06-11T13:33:51.108Z",
+    "updatedAt": "2025-06-11T13:33:51.108Z"
+  },
+  {
+    "_id": "684985bf6f1d92e44273d65c",
+    "name": "Jambon",
+    "category": "Viande",
+    "__v": 0,
+    "createdAt": "2025-06-11T13:33:51.108Z",
+    "updatedAt": "2025-06-11T13:33:51.108Z"
+  },
+  {
+    "_id": "684985bf6f1d92e44273d65d",
+    "name": "saucisse Knacki",
+    "category": "Viande",
+    "__v": 0,
+    "createdAt": "2025-06-11T13:33:51.108Z",
+    "updatedAt": "2025-06-11T13:33:51.108Z"
+  },
+  {
+    "_id": "684985bf6f1d92e44273d666",
+    "name": "Dinde",
+    "category": "Viande",
+    "__v": 0,
+    "createdAt": "2025-06-11T13:33:51.109Z",
+    "updatedAt": "2025-06-11T13:33:51.109Z"
+  },
+  {
+    "_id": "684985bf6f1d92e44273d669",
+    "name": "sanglier",
+    "category": "Viande",
+    "__v": 0,
+    "createdAt": "2025-06-11T13:33:51.109Z",
+    "updatedAt": "2025-06-11T13:33:51.109Z"
+  },
+  {
+    "_id": "684985bf6f1d92e44273d66a",
+    "name": "Entrecote",
+    "category": "Viande",
+    "__v": 0,
+    "createdAt": "2025-06-11T13:33:51.109Z",
+    "updatedAt": "2025-06-11T13:33:51.109Z"
+  },
+  {
+    "_id": "684985bf6f1d92e44273d66b",
+    "name": "bavette",
+    "category": "Viande",
+    "__v": 0,
+    "createdAt": "2025-06-11T13:33:51.109Z",
+    "updatedAt": "2025-06-11T13:33:51.109Z"
+  },
+  {
+    "_id": "684985bf6f1d92e44273d66d",
+    "name": "Thon",
+    "category": "Poisson",
+    "__v": 0,
+    "createdAt": "2025-06-11T13:33:51.109Z",
+    "updatedAt": "2025-06-11T13:33:51.109Z"
+  },
+  {
+    "_id": "684985bf6f1d92e44273d674",
+    "name": "Colin",
+    "category": "Poisson",
+    "__v": 0,
+    "createdAt": "2025-06-11T13:33:51.109Z",
+    "updatedAt": "2025-06-11T13:33:51.109Z"
+  },
+  {
+    "_id": "684985bf6f1d92e44273d675",
+    "name": "Truite",
+    "category": "Poisson",
+    "__v": 0,
+    "createdAt": "2025-06-11T13:33:51.109Z",
+    "updatedAt": "2025-06-11T13:33:51.109Z"
+  },
+  {
+    "_id": "684985bf6f1d92e44273d678",
+    "name": "Viande hachée",
+    "category": "Viande",
+    "__v": 0,
+    "createdAt": "2025-06-11T13:33:51.109Z",
+    "updatedAt": "2025-06-11T13:33:51.109Z"
+  },
+  {
+    "_id": "684985bf6f1d92e44273d679",
+    "name": "Œufs",
+    "category": "Autre",
+    "__v": 0,
+    "createdAt": "2025-06-11T13:33:51.109Z",
+    "updatedAt": "2025-06-11T13:33:51.109Z"
+  },
+  {
+    "_id": "684985bf6f1d92e44273d67f",
+    "name": "Tomate",
+    "category": "Légume",
+    "__v": 0,
+    "createdAt": "2025-06-11T13:33:51.109Z",
+    "updatedAt": "2025-06-11T13:33:51.109Z"
+  },
+  {
+    "_id": "684985bf6f1d92e44273d680",
+    "name": "Concombre",
+    "category": "Légume",
+    "__v": 0,
+    "createdAt": "2025-06-11T13:33:51.109Z",
+    "updatedAt": "2025-06-11T13:33:51.109Z"
+  },
+  {
+    "_id": "684985bf6f1d92e44273d681",
+    "name": "Haricot vert",
+    "category": "Légume",
+    "__v": 0,
+    "createdAt": "2025-06-11T13:33:51.109Z",
+    "updatedAt": "2025-06-11T13:33:51.109Z"
+  },
+  {
+    "_id": "684985bf6f1d92e44273d684",
+    "name": "Endive",
+    "category": "Légume",
+    "__v": 0,
+    "createdAt": "2025-06-11T13:33:51.109Z",
+    "updatedAt": "2025-06-11T13:33:51.109Z"
+  },
+  {
+    "_id": "684985bf6f1d92e44273d68f",
+    "name": "Pomme de terre",
+    "category": "Féculent",
+    "__v": 0,
+    "createdAt": "2025-06-11T13:33:51.109Z",
+    "updatedAt": "2025-06-11T13:33:51.109Z"
+  },
+  {
+    "_id": "684985bf6f1d92e44273d695",
+    "name": "Lentilles",
+    "category": "Féculent",
+    "__v": 0,
+    "createdAt": "2025-06-11T13:33:51.110Z",
+    "updatedAt": "2025-06-11T13:33:51.110Z"
+  },
+  {
+    "_id": "684985bf6f1d92e44273d699",
+    "name": "pate brisée",
+    "category": "Pâte",
+    "__v": 0,
+    "createdAt": "2025-06-11T13:33:51.110Z",
+    "updatedAt": "2025-06-11T13:33:51.110Z"
+  },
+  {
+    "_id": "684985bf6f1d92e44273d69d",
+    "name": "Frites",
+    "category": "Féculent",
+    "__v": 0,
+    "createdAt": "2025-06-11T13:33:51.110Z",
+    "updatedAt": "2025-06-11T13:33:51.110Z"
+  },
+  {
+    "_id": "684985bf6f1d92e44273d6a1",
+    "name": "Pain de mie",
+    "category": "Pain",
+    "__v": 0,
+    "createdAt": "2025-06-11T13:33:51.110Z",
+    "updatedAt": "2025-06-11T13:33:51.110Z"
+  },
+  {
+    "_id": "684985bf6f1d92e44273d6a9",
+    "name": "pomme dauphine",
+    "category": "Féculent",
+    "__v": 0,
+    "createdAt": "2025-06-11T13:33:51.110Z",
+    "updatedAt": "2025-06-11T13:33:51.110Z"
+  }
+]

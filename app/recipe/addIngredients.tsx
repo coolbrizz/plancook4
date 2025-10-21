@@ -1,7 +1,7 @@
 import SelectionModal from "@/components/SelectionModal";
 import { endpoints } from "@/config/api";
 import { useApi } from "@/hooks/useApi";
-import { router } from "expo-router";
+import { router, Stack } from "expo-router";
 import React, { useEffect, useState } from "react";
 import { ScrollView, StyleSheet, Text, TextInput, View } from "react-native";
 import { Button, Menu } from "react-native-paper";
@@ -80,56 +80,73 @@ export default function AddIngredients() {
   };
 
   return (
-    <ScrollView style={styles.container}>
-      <View style={styles.content}>
-        <Text style={styles.title}>Nouvel Ingrédient</Text>
+    <>
+      <Stack.Screen
+        options={{
+          headerShown: true,
+          title: "Nouvel Ingrédient",
+          headerStyle: {
+            backgroundColor: "#A1CEDC",
+          },
+          headerTintColor: "#fff",
+          headerTitleStyle: {
+            fontWeight: "bold",
+          },
+        }}
+      />
+      <ScrollView style={styles.container}>
+        <View style={styles.content}>
+          <TextInput
+            style={styles.input}
+            placeholder="Nom de l'ingrédient"
+            value={ingredientName}
+            onChangeText={setIngredientName}
+          />
 
-        <TextInput
-          style={styles.input}
-          placeholder="Nom de l'ingrédient"
-          value={ingredientName}
-          onChangeText={setIngredientName}
-        />
+          <Text style={styles.subtitle}>Catégorie :</Text>
+          <Menu
+            visible={menuVisible}
+            onDismiss={() => setMenuVisible(false)}
+            anchor={
+              <Button
+                mode="outlined"
+                onPress={() => setMenuVisible(true)}
+                style={styles.categoryButton}
+              >
+                {getDisplayCategory(category)}
+              </Button>
+            }
+          >
+            {CATEGORIES.map((cat) => (
+              <Menu.Item
+                key={cat}
+                onPress={() => {
+                  setCategory(cat);
+                  setMenuVisible(false);
+                }}
+                title={getDisplayCategory(cat)}
+              />
+            ))}
+          </Menu>
 
-        <Text style={styles.subtitle}>Catégorie :</Text>
-        <Menu
-          visible={menuVisible}
-          onDismiss={() => setMenuVisible(false)}
-          anchor={
-            <Button
-              mode="outlined"
-              onPress={() => setMenuVisible(true)}
-              style={styles.categoryButton}
-            >
-              {getDisplayCategory(category)}
-            </Button>
-          }
-        >
-          {CATEGORIES.map((cat) => (
-            <Menu.Item
-              key={cat}
-              onPress={() => {
-                setCategory(cat);
-                setMenuVisible(false);
-              }}
-              title={getDisplayCategory(cat)}
-            />
-          ))}
-        </Menu>
+          <Button
+            mode="contained"
+            onPress={handleSave}
+            style={styles.saveButton}
+          >
+            Enregistrer l&apos;ingrédient
+          </Button>
 
-        <Button mode="contained" onPress={handleSave} style={styles.saveButton}>
-          Enregistrer l&apos;ingrédient
-        </Button>
-
-        <SelectionModal
-          visible={modalVisible}
-          onClose={() => setModalVisible(false)}
-          onSelect={handleSelect}
-          data={ingredients || []}
-          title="Sélectionner un ingrédient"
-        />
-      </View>
-    </ScrollView>
+          <SelectionModal
+            visible={modalVisible}
+            onClose={() => setModalVisible(false)}
+            onSelect={handleSelect}
+            data={ingredients || []}
+            title="Sélectionner un ingrédient"
+          />
+        </View>
+      </ScrollView>
+    </>
   );
 }
 
