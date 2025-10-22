@@ -192,22 +192,14 @@ export default function EditMealScreen() {
     }
   };
 
-  const displayDate = date
-    ? new Date(date as string).toLocaleDateString("fr-FR", {
-        weekday: "long",
-        day: "numeric",
-        month: "long",
-      })
-    : "";
-
   return (
     <>
       <Stack.Screen
         options={{
           headerShown: true,
-          title: `Sélectionnez vos repas`,
+          title: `Selectionnez vos repas`,
           headerStyle: {
-            backgroundColor: "#A1CEDC",
+            backgroundColor: "#556942",
           },
           headerTintColor: "#fff",
           headerTitleStyle: {
@@ -351,6 +343,7 @@ const styles = StyleSheet.create({
   container: {
     flex: 1,
     padding: 20,
+    backgroundColor: "#F8F6EE",
   },
   title: {
     fontSize: 24,
@@ -405,7 +398,7 @@ const styles = StyleSheet.create({
   saveButton: {
     marginTop: 20,
     marginBottom: 40,
-    backgroundColor: "#A1CEDC",
+    backgroundColor: "#556942",
   },
   recipeName: {
     fontSize: 16,

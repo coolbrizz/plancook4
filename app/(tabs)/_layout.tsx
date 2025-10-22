@@ -1,7 +1,7 @@
 import { Ionicons } from "@expo/vector-icons";
 import { Tabs, useRouter } from "expo-router";
 import React from "react";
-import { Platform } from "react-native";
+import { Image, Platform } from "react-native";
 import { HapticTab } from "../../components/HapticTab";
 import { Button } from "../../components/ui/Button";
 import { IconSymbol } from "../../components/ui/IconSymbol";
@@ -15,9 +15,16 @@ export default function TabLayout() {
   return (
     <Tabs
       screenOptions={{
-        tabBarActiveTintColor: "#FF6B6B",
-        headerShown: false,
+        tabBarActiveTintColor: "#556942",
+        headerShown: true,
         tabBarButton: HapticTab,
+        headerStyle: {
+          backgroundColor: "#F8F6EE",
+        },
+        headerTintColor: "#556942",
+        headerTitleStyle: {
+          fontWeight: "bold",
+        },
         tabBarBackground: TabBarBackground,
         tabBarStyle: Platform.select({
           ios: {
@@ -25,6 +32,12 @@ export default function TabLayout() {
           },
           default: { marginTop: 12 },
         }),
+        headerLeft: () => (
+          <Image
+            source={require("../../assets/images/icon.png")}
+            style={{ width: 60, height: 60, marginLeft: 12 }}
+          />
+        ),
         headerRight: () => (
           <Button
             onPress={async () => {
@@ -33,7 +46,7 @@ export default function TabLayout() {
             }}
             title=""
             variant="text"
-            icon={<Ionicons name="log-out-outline" size={70} color={"black"} />}
+            icon={<Ionicons name="log-out-outline" size={28} color="#556942" />}
           />
         ),
       }}
@@ -42,11 +55,14 @@ export default function TabLayout() {
         name="index"
         options={{
           title: "PlanCook",
+          tabBarStyle: {
+            backgroundColor: "#F8F6EE",
+          },
           tabBarIcon: () => (
             <IconSymbol
               size={30}
               name="house.fill"
-              color={"black"}
+              color="#556942"
               weight="bold"
             />
           ),
@@ -60,7 +76,7 @@ export default function TabLayout() {
             <IconSymbol
               size={30}
               name="fork.knife"
-              color={"black"}
+              color="#556942"
               weight="bold"
             />
           ),

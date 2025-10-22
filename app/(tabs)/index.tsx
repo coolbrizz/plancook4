@@ -21,7 +21,7 @@ interface DailyMeal {
 }
 
 export default function HomeScreen() {
-  const { session, logout } = useAuth();
+  const { session } = useAuth();
   const {
     data: dailyMeals,
     fetchData,
@@ -76,25 +76,6 @@ export default function HomeScreen() {
   const router = useRouter();
   return (
     <ScrollView style={styles.container}>
-      <View style={styles.header}>
-        <Text style={styles.subtitle}>Planning repas de la semaine</Text>
-        <Button
-          onPress={async () => {
-            try {
-              await logout();
-              router.replace("/auth/signin");
-            } catch (error) {
-              console.error("Erreur lors de la déconnexion:", error);
-              alert("Erreur lors de la déconnexion. Veuillez réessayer.");
-            }
-          }}
-          mode="text"
-          style={{ padding: 0 }}
-        >
-          <Ionicons name="log-out-outline" size={26} color={"black"} />
-        </Button>
-      </View>
-
       <View style={styles.weekContainer}>
         {loading && !dailyMeals ? (
           <Text style={styles.loadingText}>Chargement...</Text>
@@ -113,7 +94,9 @@ export default function HomeScreen() {
 
           return (
             <View key={meal._id} style={styles.dayContainer}>
-              <Text style={styles.dayTitle}>{formattedDate}</Text>
+              <Text style={styles.dayTitle}>
+                {formattedDate[0].toUpperCase() + formattedDate.slice(1)}
+              </Text>
               <Button
                 mode="contained"
                 onPress={() =>
@@ -129,7 +112,7 @@ export default function HomeScreen() {
                 labelStyle={{
                   fontSize: 12,
                   fontWeight: "bold",
-                  color: "rgb(11, 113, 147)",
+                  color: "#FFF",
                 }}
               >
                 Modifier les repas
@@ -176,13 +159,14 @@ export default function HomeScreen() {
 const styles = StyleSheet.create({
   container: {
     flex: 1,
+    backgroundColor: "#FFF",
   },
   header: {
     flexDirection: "row",
     justifyContent: "space-between",
     padding: 20,
     alignItems: "center",
-    backgroundColor: "#A1CEDC",
+    backgroundColor: "#FFF",
   },
   title: {
     fontSize: 32,
@@ -193,56 +177,76 @@ const styles = StyleSheet.create({
     fontSize: 20,
     fontWeight: "bold",
     marginTop: 20,
+    color: "#80322D",
   },
   weekContainer: {
     padding: 16,
     gap: 16,
   },
   dayContainer: {
-    backgroundColor: "#fff",
-    borderRadius: 12,
-    padding: 16,
-    shadowColor: "#000",
+    backgroundColor: "#F8F6EE",
+    borderRadius: 16,
+    padding: 20,
+    borderWidth: 1,
+    borderColor: "#E8E5D9",
+    shadowColor: "#556942",
     shadowOffset: {
       width: 0,
-      height: 2,
+      height: 4,
     },
-    shadowOpacity: 0.1,
-    shadowRadius: 3,
-    elevation: 3,
+    shadowOpacity: 0.15,
+    shadowRadius: 8,
+    elevation: 6,
   },
   dayTitle: {
-    fontSize: 18,
-    marginBottom: 14,
-    fontWeight: "600",
+    fontSize: 20,
+    marginBottom: 16,
+    fontWeight: "700",
+    color: "#556942",
+    letterSpacing: 0.3,
   },
   mealContainer: {
     flexDirection: "row",
     justifyContent: "space-between",
-    marginTop: 8,
-    gap: 12,
+    marginTop: 12,
+    gap: 16,
   },
   mealBox: {
     flex: 1,
-    backgroundColor: "#f5f5f5",
-    padding: 12,
-    borderRadius: 8,
+    backgroundColor: "#FFF",
+    padding: 16,
+    borderRadius: 12,
+    borderWidth: 1,
+    borderColor: "#E8E5D9",
+    shadowColor: "#FFF",
+    shadowOffset: {
+      width: 0,
+      height: 2,
+    },
+    shadowOpacity: 0.08,
+    shadowRadius: 4,
+    elevation: 2,
   },
   mealTitle: {
-    marginBottom: 4,
-    fontWeight: "bold",
+    marginBottom: 8,
+    fontWeight: "700",
+    fontSize: 16,
+    color: "#80322D",
   },
   addButton: {
-    margin: 16,
-    backgroundColor: "#A1CEDC",
+    margin: 4,
+    backgroundColor: "#556942",
   },
   modifButton: {
     position: "absolute",
-    top: 4,
+    top: 8,
     right: 16,
-    borderRadius: 8,
+    fontSize: 12,
+    fontWeight: "bold",
+    color: "#FFF",
+    borderRadius: 16,
     marginVertical: 2,
-    backgroundColor: "rgb(211, 244, 255)",
+    backgroundColor: "rgb(85, 105, 66, 0.5)",
   },
   loadingText: {
     textAlign: "center",

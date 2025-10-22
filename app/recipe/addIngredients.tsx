@@ -86,9 +86,9 @@ export default function AddIngredients() {
           headerShown: true,
           title: "Nouvel Ingrédient",
           headerStyle: {
-            backgroundColor: "#A1CEDC",
+            backgroundColor: "#F8F6EE",
           },
-          headerTintColor: "#fff",
+          headerTintColor: "#556942",
           headerTitleStyle: {
             fontWeight: "bold",
           },
@@ -153,6 +153,7 @@ export default function AddIngredients() {
 const styles = StyleSheet.create({
   container: {
     flex: 1,
+    backgroundColor: "#F8F6EE",
   },
   content: {
     padding: 20,
@@ -170,6 +171,8 @@ const styles = StyleSheet.create({
   },
   input: {
     backgroundColor: "#f5f5f5",
+    borderWidth: 1,
+    borderColor: "#E8E5D9",
     padding: 15,
     borderRadius: 8,
     marginBottom: 20,

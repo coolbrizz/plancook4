@@ -31,9 +31,9 @@ function RootLayoutNav() {
           initialRouteName="(tabs)"
           screenOptions={{
             headerStyle: {
-              backgroundColor: "#A1CEDC",
+              backgroundColor: "#F8F6EE",
             },
-            headerTintColor: "#fff",
+            headerTintColor: "#556942",
             headerTitleStyle: {
               fontWeight: "bold",
             },
@@ -52,9 +52,7 @@ function RootLayoutNav() {
 export default function RootLayout() {
   return (
     <AuthProvider>
-      <PaperProvider>
-        <RootLayoutNav />
-      </PaperProvider>
+      <RootLayoutNav />
     </AuthProvider>
   );
 }

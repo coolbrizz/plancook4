@@ -10,8 +10,6 @@ import {
   TouchableOpacity,
   View,
 } from "react-native";
-import { Button } from "react-native-paper";
-import { useAuth } from "../../contexts/AuthContext";
 
 export interface Recipe {
   _id: string;
@@ -24,7 +22,6 @@ export interface Recipe {
 }
 
 export default function RecipesScreen() {
-  const { logout } = useAuth();
   const { data: recipes, fetchData } = useApi<Recipe[]>(endpoints.recipes);
 
   useEffect(() => {
@@ -35,18 +32,6 @@ export default function RecipesScreen() {
   console.log(recipes);
   return (
     <ScrollView style={styles.container}>
-      <View style={styles.header}>
-        <Text style={styles.title}>Mes Recettes</Text>
-        <Button
-          onPress={async () => {
-            await logout();
-            router.replace("/auth/signin");
-          }}
-          mode="text"
-        >
-          <Ionicons name="log-out-outline" size={26} color={"black"} />
-        </Button>
-      </View>
       <View style={styles.addButtonContainer}>
         <TouchableOpacity
           style={styles.addButton}
@@ -56,7 +41,7 @@ export default function RecipesScreen() {
             })
           }
         >
-          <Ionicons name="add-circle" size={24} color="#A1CEDC" />
+          <Ionicons name="add-circle" size={24} color="#556942" />
           <Text style={styles.addButtonText}>Ajouter une recette</Text>
         </TouchableOpacity>
         <TouchableOpacity
@@ -67,7 +52,7 @@ export default function RecipesScreen() {
             })
           }
         >
-          <Ionicons name="add-circle" size={24} color="#A1CEDC" />
+          <Ionicons name="add-circle" size={24} color="#556942" />
           <Text style={styles.addButtonText}>Ajouter un ingrédient</Text>
         </TouchableOpacity>
       </View>
@@ -95,6 +80,7 @@ export default function RecipesScreen() {
 const styles = StyleSheet.create({
   container: {
     flex: 1,
+    backgroundColor: "#FFF",
   },
   header: {
     flexDirection: "row",
@@ -108,7 +94,7 @@ const styles = StyleSheet.create({
     fontWeight: "bold",
   },
   recipeCard: {
-    backgroundColor: "#fff",
+    backgroundColor: "#F8F6EE",
     padding: 16,
     margin: 8,
     borderRadius: 8,
@@ -133,7 +119,7 @@ const styles = StyleSheet.create({
     flexDirection: "row",
     alignItems: "center",
     justifyContent: "center",
-    backgroundColor: "#fff",
+    backgroundColor: "#F8F6EE",
     margin: 8,
     padding: 8,
     borderRadius: 12,
@@ -145,7 +131,7 @@ const styles = StyleSheet.create({
   },
   addButtonText: {
     marginLeft: 12,
-    color: "#A1CEDC",
+    color: "#80322D",
     fontWeight: "bold",
   },
   addButtonContainer: {

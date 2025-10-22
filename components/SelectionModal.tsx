@@ -9,6 +9,7 @@ import {
   View,
 } from "react-native";
 import { Ionicons } from "@expo/vector-icons";
+import { router } from "expo-router";
 
 interface SelectionModalProps {
   visible: boolean;
@@ -99,6 +100,22 @@ export default function SelectionModal({
               <Text style={styles.emptyText}>Aucun résultat trouvé</Text>
             }
           />
+          <TouchableOpacity
+            style={styles.closeButton}
+            onPress={() => {
+              if (title.includes("recette")) {
+                router.push("/recipe/add_recipe");
+              } else {
+                router.push("/recipe/addIngredients");
+              }
+            }}
+          >
+            <Text style={styles.closeButtonText}>
+              {title.includes("recette")
+                ? "Ajouter une recette"
+                : "Ajouter un ingrédient"}
+            </Text>
+          </TouchableOpacity>
           <TouchableOpacity style={styles.closeButton} onPress={onClose}>
             <Text style={styles.closeButtonText}>Fermer</Text>
           </TouchableOpacity>
@@ -163,7 +180,7 @@ const styles = StyleSheet.create({
   closeButton: {
     marginTop: 20,
     padding: 15,
-    backgroundColor: "#A1CEDC",
+    backgroundColor: "#556942",
     borderRadius: 10,
     alignItems: "center",
   },
