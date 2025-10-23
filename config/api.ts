@@ -1,6 +1,6 @@
 // API URL from environment variable or fallback to localhost
 export const API_URL =
-  process.env.EXPO_PUBLIC_API_URL || "http://192.168.1.104:5000";
+  process.env.EXPO_PUBLIC_API_URL || "https://plancook4-2.onrender.com";
 
 export const endpoints = {
   baseUrl: API_URL,
